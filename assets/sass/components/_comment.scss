@@ -1,0 +1,103 @@
+// Comment
+
+.comment-list {
+    & > li {
+        .reply-list {
+            margin-left: 10rem;
+        }
+    }
+}
+
+.blog-comments {
+    .title {
+        font-size: 4rem;
+        letter-spacing: -.02em;
+    }
+}
+
+.comment {
+    .comment-body {
+        position: relative;
+        border: 2px solid #b2dded;
+        border-radius: 2.5rem;
+        padding: 2.3rem 4rem 4rem 4rem;
+
+        > span {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 3rem;
+            color: $body-text-color;
+            display: block;
+            margin-top: -.5rem;
+        }
+    
+    }
+   
+    
+    figure {
+        margin-right: 1rem;
+        overflow: visible;
+        img {
+            width: 9.2rem;
+            height: 9.2rem;
+        }
+    }
+
+    .comment-author {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .comment-desc {
+        font-size: 1.6rem;
+        margin-top: .7rem;
+        margin-bottom: 0;
+    }
+    
+    .btn-xs {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        padding: 1rem 2.8rem;
+        span {
+            @include animateIt;
+        }
+        &:not(:hover) {
+            span {
+                color: $primary-color;
+            }
+        }
+        &:hover {
+            span {
+                color: #fff;
+            }
+        }
+        &::before {
+            background-color: #ebf6fa;
+        }
+        &::after {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.blog-comments {
+    .title {
+        margin: 86px 0 47px 0;
+    }
+}
+
+@include mq(md,max) {
+    .comment-list > li .reply-list {
+        margin-left: 5rem;
+    }
+    .comment .btn-xs {
+        position: relative;
+    }
+}
+
+@include mq(xs,max) {
+    .comment-list > li .reply-list {
+        margin-left: 2rem;
+    }
+}

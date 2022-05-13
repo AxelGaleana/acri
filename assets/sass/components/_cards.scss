@@ -1,0 +1,496 @@
+// Card
+
+.card {
+    background-color: #ebf6fa;
+    border-color: transparent;
+    border-radius: 2.5rem;
+    border-width: 0;
+    figure {
+        width: 9.5rem;
+        height: 9.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        color: $secondary-color;
+        font-size: 4.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include mq(xs, max) {
+        figure {
+            
+        }
+    }
+    // &:hover {
+    //     .card-heading figure {
+    //         background-color: $secondary-color;
+    //         color: #fff;
+    //     }
+    // }
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    padding: 3.5rem 4rem;
+    .card-title {
+        margin-left: 1.7rem;
+        line-height: 3.4rem;
+        @include mq(lg, max) {
+            font-size: calc(15px + (30 - 15) * ((100vw - 200px) / (992 - 200)));
+            line-height: calc(20px + (50 - 20) * ((100vw - 200px) / (992 - 200)));
+        }
+    }
+    @media (max-width: 400px) {
+        // flex-direction: column;
+        // text-align: center;
+        flex-wrap: wrap;
+        .card-title {
+            width: 100%;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.card-content {
+    background-color: #fff;
+    border: 2px solid #b2dded;
+    border-radius: 2.5rem;
+    padding: 3.9rem 5.1rem;
+    @include mq(lg, max) {
+        padding: 3.9rem 4rem;
+    }
+    .card-desc {
+        margin-right: -1rem;
+    }
+    .btn-link {
+        margin-left: .8rem;
+        margin-top: 3.4rem;
+        a {
+            text-decoration: none;
+            position: relative;
+            @include animateIt;
+            &::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0rem;
+				bottom: .1rem;
+				height: .1rem;
+				background-color: $secondary-color;
+				transform-origin: right center;
+				transform: scale(0, 1);
+				transition: transform .3s ease;
+			}
+			&:hover {
+                text-decoration: none;
+				&::before {
+					transform-origin: left center;
+    				transform: scale(1, 1);
+				}
+			}
+        }
+    }
+}
+
+.card-menu {
+    margin-left: .8rem;
+    .menu-item {
+        line-height: 3rem;
+        i {
+            font-size: 1.6rem;
+            margin-right: .6rem;
+            @include animateIt;
+        }
+        &:hover {
+            i{
+                color: $secondary-color;
+            }
+        }
+        a {
+            text-decoration: none;
+            position: relative;
+            font-weight: 500;
+            @include animateIt;
+            &::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0rem;
+				bottom: .1rem;
+				height: .1rem;
+				background-color: #6d95af;
+				transform-origin: right center;
+				transform: scale(0, 1);
+				transition: transform .3s ease;
+			}
+			&:hover {
+                text-decoration: none;
+                font-weight: 700;
+				&::before {
+					transform-origin: left center;
+    				transform: scale(1, 1);
+				}
+			}
+        }
+    }
+    .item-link {
+        color: $body-text-color;
+        &:hover {
+            color: $primary-color;
+            text-decoration-line: underline;
+            text-decoration-color: $body-text-color;
+        }
+    }
+}
+
+//card-membership
+.card.card-membership {
+    .card-content {
+        padding: 5rem 7rem 5.5rem;
+    }
+    figure {
+        color: #fff;
+        margin: 0 auto 3rem;
+        img {
+            display: inline;
+        }
+    }
+    .price-box {
+        margin-bottom: 4rem;
+    }
+    .member-price {
+        margin-top: 1rem;
+        font-size: 4rem;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+    .card-menu {
+        text-align: left;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member-type {
+        font-weight: 500;
+    } 
+    .menu-item {
+        line-height: 4rem;
+        font-weight: 500;
+        i {
+            color: #80bf2f;
+            margin-right: .8rem;
+        }
+    }
+    .btn-link {
+        font-weight: 700;
+        margin: 3.5rem 0 0;
+        a {
+            font-size: 1.8rem;
+        }
+    }
+    @include mq(lg, max) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.card-membership.member-type-1 {
+    .member-price ,.btn-link a ,.btn-link i {
+        color: $secondary-color;
+    }
+}
+.card-membership.member-type-2 {
+    .member-price ,.btn-link a ,.btn-link i {
+        color: $primary-color;
+    }
+    .btn-link a::before {
+        background-color: $primary-color;
+    }
+}
+.card-membership.member-type-3 {
+    .member-price ,.btn-link a ,.btn-link i {
+        color: #ff9712;
+    }
+    .btn-link a::before {
+        background-color: #ff9712;
+    }
+}
+
+//card-review 
+.card.card-review {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #b2dded;
+    padding: 5rem;
+    & + .card.card-review {
+        margin-top: 3rem;
+    }
+    figure {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-bottom: 3rem;
+        margin-right: 1.5rem;
+        border-radius: 50%;
+        overflow: visible;
+        img.quote-icon {
+            position: absolute;
+            top: 0;
+            left: -30%;
+        }
+    }
+    .card-review-quote {
+        position: absolute;
+        top: 0;
+        left: -25%;
+        width: 55px;
+        height: 55px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        span {
+            font-size: 70px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 55px;
+            margin-top: 15px;
+            @include absoluteCenter;
+        }
+    }
+    .card-content {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .review-author {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    // .review-desc {
+    //     margin-right: 1.5rem;
+    // }
+    .review-city {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 500;
+    }
+    .ratings-container {
+        margin: 1rem 0 1.5rem;
+        .ratings,.ratings-val {
+            line-height: 2;
+            letter-spacing: .2em;
+        }
+    }
+    @include mq(lg, max) {
+        .card-heading {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        figure {
+            display: block;
+            margin: 0 auto;
+            width: max-content;
+        }
+    }
+}
+
+.card.card-review.review-carousel {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    .card-heading {
+        padding: 0;
+    }
+    .review-desc {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+    @include mq(lg, max) {
+        text-align: center;
+    }
+}
+
+.review-carousel.owl-carousel.owl-simple {
+    .owl-stage-outer {
+        padding-left: 4rem;
+        margin-left: -4rem; 
+    }
+    .owl-nav {
+        button {
+            font-size: 2.4rem;
+            border-radius: 50%;
+            width: 6rem;
+            height: 6rem;
+            color: #5e616c;
+            background-color: #fff;
+            &:hover {
+                color: $secondary-color;
+                background-color: #fff;
+            }
+        }
+        .owl-prev {
+            top: 4rem;
+            right: 11rem;
+            left: auto;
+        }
+        .owl-next {
+            top: 4rem;
+            right: 3rem;
+        }   
+    }
+}
+
+.team-card {
+    .doctor-cat {
+        margin: .2rem 0 1rem 0 !important;
+    }
+}
+
+//card-rating
+.card-rating {
+    position: absolute;
+    z-index: 100;
+    right: 1.5rem;
+    bottom: -8rem;
+    max-width: 370px;
+    max-height: 347px;
+    padding: 5rem 6.3rem 6.4rem 6.3rem;
+    background-color: $secondary-color;
+    border-radius: 2.5rem;
+    .ratings-container {
+        font-size: 2.4rem;
+        margin-bottom: 1.7rem;
+        line-height: 4rem;
+        letter-spacing: .2em;
+    }
+    .card-info {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.33;
+        color: #fff;
+        margin-bottom: 3.2rem;
+        @include mq(lg, max) {
+            font-size: calc(16px + (30 - 16) * ((100vw - 200px) / (992 - 200)));
+            line-height: calc(26px + (40 - 26) * ((100vw - 200px) / (992 - 200)));
+            margin-bottom: 2rem;
+        }
+    }
+    .btn-link a,.btn-link i{
+        color: #fff;
+    }
+    .btn-link a {
+        text-decoration: none;
+        position: relative;
+        @include animateIt;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0rem;
+            bottom: .1rem;
+            height: .2rem;
+            background-color: $seconday-color-light;
+            transform-origin: right center;
+            transform: scale(0, 1);
+            transition: transform .3s ease;
+        }
+        &:hover {
+            text-decoration: none;
+            &::before {
+                transform-origin: left center;
+                transform: scale(1, 1);
+            }
+        }
+    }
+    @include mq(md, max) {
+        padding: 3rem 4rem 3rem 4rem;
+    }
+}
+.card-rating.card-rating-left {
+    left: 1.5rem;
+    right: auto;
+}
+.card-rating.card-contact {
+    right: 78px;
+}
+
+.card.hover-icon {
+    figure {
+        position: relative;
+        width: 95px;
+        height: 95px;
+        @include animateIt;
+        i {
+            @include animateIt;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity .3s ease;
+    }
+    img.hover-img {
+        opacity: 0;
+    }
+    &:hover {
+        img.default-img {
+            opacity: 0;
+        }
+        img.hover-img {
+            opacity: 1;
+        }
+    }
+    &:hover {
+        figure {
+            background-color: $secondary-color; 
+            i {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// @include mq(xl,max) {
+//     .card-rating {
+//         bottom: -13rem;
+//     }
+// }
+
+@include mq(lg,max) {
+    .card.card-membership {
+        .card-content{
+            padding: 3rem 4rem 3rem;
+        }
+    }
+    .card-rating {
+        width: 70%;
+        right: initial;
+        left: 50%;
+        bottom: -10rem;
+        transform: translateX(-50%);
+    }
+    // .card-rating, .card-rating.card-rating-left, .card-rating.card-contact {
+    //     position: static;
+    //     right: 0;
+    //     max-width: 70%;
+    //     text-align: center;
+    //     margin: 5rem auto 0;
+    //     padding: 3rem;
+    //     .card-info {
+    //         font-size: 2rem;
+    //     }
+    // }
+}
+
+@include mq(xs, max) {
+    .card-rating.card-contact {
+        padding: 3rem 5rem;
+    }
+}

@@ -1,0 +1,98 @@
+// Base
+
+// # Variables
+
+@include set-default (
+	(
+		body: (
+			background: #fff
+		)
+	)
+);
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%;
+	font-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	color: $body-text-color;
+	@include css( background, body, background );
+	font-size: #{$font-size};
+	font-weight: 400;
+	line-height: 1.25;
+	font-family: $font-family;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+
+	// &:not(.loaded) > *:not(.loading-overlay) {
+	// 	visibility: hidden;
+	// }
+}
+
+::-moz-selection {
+	background-color: $primary-color;
+	color: #fff;
+}
+
+::selection {
+	background-color: $primary-color;
+	color: #fff;
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes bouncedelay {
+	0%,
+	80%,
+	100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	40% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes bouncedelay {
+	0%,
+	80%,
+	100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+}
+
+@include mq(md, max) {
+	html {
+		font-size: 9px;
+	}
+}

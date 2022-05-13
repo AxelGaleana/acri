@@ -1,0 +1,283 @@
+// Icon-boxes
+
+.icon-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -3rem;
+    margin-left: -3rem;
+    .icon-box-wrapper {
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+    @include mq(lg, max) {
+        margin-top: 0;
+        margin-left: 0;
+        .icon-box-wrapper {
+            margin: 0 0 1.5rem 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @include mq(sm, max) {
+        margin: 0;
+    }
+}
+
+.icon-box {
+    padding: 3rem 5rem;
+    background-color: #fff;
+    border-radius: 30px;
+    min-width: 95px;
+    figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 10rem;
+        background-color: #f0f5f8;
+        color: $secondary-color;
+        font-size: 4.4rem;
+        margin-bottom: 3rem;
+        border-radius: 50%;
+    }
+    .box-title {
+        color: $body-text-color;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        @include mq(lg, max) {
+            font-size: calc(15px + (18 - 15) * ((100vw - 200px) / (992 - 200))) !important;
+            line-height: calc(20px + (28 - 20) * ((100vw - 200px) / (992 - 200)));
+        }
+    }
+    .box-desc {
+        letter-spacing: 0;
+    }
+    &-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mq(lg, max) {
+        &-1 {
+            flex-direction: row;
+            padding: 1.9rem 3rem;
+            figure {
+                margin-bottom: 0;
+            }
+            .icon-box-content {
+                margin-left: 3rem;
+            }
+        }
+        &-wrapper {
+            width: 100%;
+        }
+    }
+    @include mq(lg, max) {
+        &-1 {
+            flex: 1;
+            figure {
+                width: 9rem;
+                height: 9rem;
+                i {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+.icon-box.icon-box-big {
+    padding: 4rem 6.35rem 3.6rem;
+    figure {
+        width: 14.3rem;
+        height: 14.3rem;
+        font-size: 6rem;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+    }
+    .box-title {
+        font-size: 2rem;
+        line-height: auto;
+        margin: 0 -3rem;
+    }
+}
+
+.icon-box.icon-box-left {
+    padding: 1.9rem 3rem;
+    display: flex;
+    align-items: center;
+    figure {
+        margin: 0;
+        background-color: $secondary-color;
+        color: #fff;
+    }
+    .icon-box-content {
+        width: calc(100% - 10rem);
+    }
+    .box-title {
+        margin-left: 3rem;
+    }
+    @include mq(md,max) {
+        width: 100%;
+        display: inline-flex;
+        &:first-child {
+            margin-right: 1.5rem;
+        }
+        // &:last-child {
+        //     margin-left: 1.5rem;
+        // }
+    }
+    @include mq(sm,max) {
+        width: 100%;
+        display: flex;
+    }
+}
+
+.icon-box.hover-border {
+    background-color: transparent;
+    border:  2px solid transparent;
+    padding: 5rem;
+    transition: border-color .3s ease;
+    
+    figure {
+        position: relative;
+        width: 12.6rem;
+        height: 12.6rem;
+        margin: 0 auto 2rem;
+        font-size: 5rem;
+        background-color: $secondary-color;
+        color: #fff;
+        transition: all .3s ease;
+    }
+    .box-title {
+        font-size: 2.4rem;
+        line-height: 4rem;
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+    }
+    .box-desc {
+        margin: 0 -2rem 3.3rem;
+    }
+    &:hover {
+        border-color: #b2dded;
+        figure {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.icon-box.covid-symptom {
+    padding: 2rem 5rem 4.5rem 5rem;
+    figure {
+        position: relative;
+        height: 170px;
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        background-color: #ffa59e;
+        overflow: visible;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 8%;
+        }
+    }
+}
+
+.icon-box.icon-box-simple {
+    padding: 0;
+    margin-top: 2.5rem;
+    figure {
+        width: 178px;
+        height: 178px;
+        background-color: #ebf6fa;
+        color: $primary-color; 
+        margin: 0 auto 5.5rem;
+        position: relative;
+        i {
+            font-size: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @include mq(lg, max) {
+            margin: 0 auto 2rem auto;
+        }
+        @include mq(md, max) {
+            width: calc(120px + (178 - 120) * ((100vw - 200px) / (992 - 200)));
+            height: calc(120px + (178 - 120) * ((100vw - 200px) / (992 - 200)));
+            i {
+                font-size: calc(50px + (80 - 50) * ((100vw - 200px) / (992 - 200)));
+            }
+        }
+    }
+    .box-title {
+        margin: 0 -1rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 700;
+        color: $primary-color;
+    }
+    .box-desc {
+        line-height: 3.4rem;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    .box-info {
+        line-height: 4rem;
+    }
+}
+
+@include mq(lg,max) {
+    .icon-box.icon-box-big {
+        padding: 4rem 3.35rem 3.6rem;
+        .box-title {
+            font-size: 1.8rem;
+        }
+    }
+    .icon-box {
+        &-1.icon-box-big {
+            figure {
+                width: 10rem;
+                height: 10rem;
+                margin: 0;
+            }
+            .box-title {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@include mq(md,max) {
+    .icon-boxes {
+        //width: 330px;
+        .icon-box, .icon-box.icon-box-big {
+            //padding: 1rem 1.5rem;
+            // figure {
+            //     width: 7rem;
+            //     height: 7rem;
+            //     font-size: 4.4rem;
+            // }
+            .box-title {
+                margin: 0;
+            }
+        }
+    }
+    // .icon-boxes .icon-box+.icon-box {
+    //     margin-left: 1.5rem;
+    // }
+    .icon-box {
+        border-radius: 1.5rem;
+        .box-title {
+            font-size: 1.6rem;
+        }
+    }
+}

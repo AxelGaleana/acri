@@ -1,0 +1,101 @@
+// Widget
+
+.widget {
+    padding: 9rem 0;
+    .btn-sm {
+        @include mq(lg) {
+            padding: 1rem 2.9rem;
+            font-size: 1.6rem;
+        }
+        @include mq(lg, max) {
+            margin-top: .5rem;
+        }
+    }
+}
+.widget-title {
+    font-size: 3rem;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 30px;
+    i {
+        color: $secondary-color;
+        margin-right: 1.1rem;
+    }
+    @include mq(lg, max) {
+        font-size: calc(18px + (30 - 18) * ((100vw - 200px) / (992 - 200)));
+        line-height: calc(28px + (40 - 28) * ((100vw - 200px) / (992 - 200)));
+        margin-bottom: calc(10px + (30 - 10) * ((100vw - 200px) / (992 - 200)));
+    }
+}
+
+.widget-desc {
+    color: #a1a8c8;
+    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    @include mq(lg, max) {
+        font-size: calc(15px + (18 - 15) * ((100vw - 200px) / (992 - 200)));
+        line-height: calc(27px + (30 - 27) * ((100vw - 200px) / (992 - 200)));
+        margin-bottom: calc(10px + (30 - 10) * ((100vw - 200px) / (992 - 200)));
+    }
+}
+
+.widget-hours {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    line-height: 4rem;
+    &:nth-of-type(n+2) {
+        margin-top: 10px;
+    }
+    span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    i {
+        margin: 0 .5rem;
+    }
+    @include mq(lg, max) {
+        span {
+            font-size: calc(14px + (18 - 14) * ((100vw - 200px) / (992 - 200)));
+        }
+        i {
+            margin: 0 .25rem;
+        }
+    }
+}
+
+.puzzle {
+    position: absolute;
+    right: 16px;
+    top: -138px;
+    z-index: 1;
+}
+
+.widget-list {
+    margin-bottom: 3.7rem;
+    .list-item {
+        display: flex;
+        border-bottom: 2px dotted #b2dded;
+        &:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+        .list-title, .list-info {
+            margin-bottom: .7rem;
+        }
+        .list-info {
+            color: $primary-color;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+// @include mq(lg,max) {
+//     .widget {
+//         padding: 5rem 0;
+//         .widget-hours .time {
+//             margin-right: 5rem;
+//         }
+//     }
+// }

@@ -1,0 +1,93 @@
+// Accordion
+
+.accordion {
+	margin-bottom: 3rem;
+}
+
+.field {
+	border-radius: 0;
+	margin-bottom: 0;
+	margin-bottom: -2px;
+	border: 2px dotted #b2dded;
+	border-width: 2px 0;
+	&.active {
+		border-color: $secondary-color;
+		position: relative;
+		z-index: 3;
+	}
+}
+
+.field-header {
+	position: relative;
+	padding: 0;
+	border: none;
+	line-height: 1.5;
+	background-color: transparent;
+	margin: 0;
+	@include clearfix();
+	.post-date {
+		font-size: 1.4rem;
+		margin-left: 4.6rem;
+		margin-top: -3.4rem;
+		margin-bottom: 2.5rem;
+    }
+}
+
+.field-title {
+	margin-bottom: 0;
+	a {
+		display: block;
+		padding: 3rem 4.6rem;
+		position: relative;
+		color: $primary-color; 
+		background-color: transparent;
+		outline: none !important;
+
+		i {
+			min-width: 17px;
+			margin-right: 2.4rem;
+		}
+
+		&:before {
+			content: '\f056';
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			color: $secondary-color;
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 400;
+			line-height: 1;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transition: all 0.3s;
+		}
+
+		&.collapsed {
+			&:hover,
+			&:focus {
+				color: $primary-color;
+			}
+
+			&:before {
+				content: '\f055';
+                color: #b2dded;
+                left: 0;
+				transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+			}
+		}
+	}
+	
+}
+
+
+.field-body {
+	padding-left: 4.6rem;
+	padding-bottom: 1.8rem;
+	border: none;
+	border-radius: 0;
+	p + p {
+		margin-top: 3rem;
+	}
+}

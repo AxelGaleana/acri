@@ -1,0 +1,105 @@
+// Side bar
+
+.side-bar {
+    .input-search {
+        .btn-search {
+            right: 1.5rem;
+        }
+    }
+}
+
+.sidebar-box {
+    border: 2px solid #b2dded;
+    border-radius: 2.5rem;
+    padding: 0 4rem;
+    margin-top: 3rem;
+    
+    .box-content {
+        padding: 0;
+        margin: 4rem 0;
+        background-color: transparent;
+    }
+    .box-title {
+        position: relative;
+        padding: 2.4rem 0;
+        margin-bottom: 2.3rem;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 2px;
+            background-color: #b2dded;
+            width: 100%;
+        }
+    }
+    .post {
+        display: flex;
+        figure, .post-title {
+            margin-bottom: 0;
+        }
+        .post-title {
+            margin-right: -1rem;
+        }
+        figure {
+            margin-right: 1.5rem;
+            border-radius: 50%;
+            width: 71px;
+            height: 71px;
+            overflow: visible;
+        }
+        & + .post {
+            margin-top: 3rem;
+        }
+    }
+    
+}
+
+.sidebar-box.bg-primary-color {
+    border: none;
+    padding-bottom: 4rem;
+    .box-title {
+        color: #fff;
+        &::before {
+            background-color: #364587;
+        }
+    }
+    .form-control::placeholder {
+        color: #fff;
+    }
+    .box-info {
+        font-size: 1.4rem;
+        line-height: 1;
+        color: #838cb1;
+    }
+}
+
+.cat-menu {
+    margin: 0 -3rem;
+    .menu-item {
+        line-height: 4.4rem;
+        border-radius: 2.5rem;
+        background-color: transparent;
+        i {
+            font-size: 1.6rem;
+            margin-right: .8rem;
+        }
+        &:hover {
+            background-color: #ebf6fa;
+            i{
+                color: $secondary-color;
+            }
+            a {
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+    }
+    .item-link {
+        width: 100%;
+        display: block;
+        color: $body-text-color;
+        padding-left: 6.2rem;
+        font-weight: 500;
+    }
+}

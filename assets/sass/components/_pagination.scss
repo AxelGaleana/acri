@@ -1,0 +1,39 @@
+// Pagination
+
+.pagination {
+    justify-content: center;
+}
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    background-color: #ebf6fa;
+    font-size: 2rem;
+    font-weight: 700;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    i {
+        font-size: 2.4rem;
+    }
+    & + a {
+        margin-left: 1rem;
+    }
+}
+
+.pagination a.active,.pagination a:hover {
+    background-color: $primary-color;
+    color: white;
+}
+
+@include mq(md,max) {
+    .pagination a {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}

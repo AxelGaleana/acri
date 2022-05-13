@@ -1,0 +1,69 @@
+// Page header
+
+.page-header {
+    display: flex;
+	align-items: center;
+	padding: 22.5rem 0 13rem 0;
+	.page-title {
+		margin-left: -2px;
+	}
+	@include mq(lg, max) {
+		padding: 12rem 0 6rem 0;
+		text-align: center;
+		.page-title {
+			margin: 0 0 1rem 0;
+		}
+	}
+}
+
+.breadcrumb-nav {
+	display: inline-flex;
+    padding: 1.34rem 2.8rem;;
+    border-radius: 2.5rem;
+    background-color: #fff;
+}
+
+.page-title {
+	// margin-top: 9.85rem;
+	margin-bottom: 1.3rem;
+}
+.breadcrumb {
+	background-color: transparent;
+	border-radius: 0;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+
+.breadcrumb-item {
+	font-size: 1.4rem;
+	font-weight: 600;
+	letter-spacing: .01em;
+	a {
+		color: $primary-color;
+	}
+
+	&.active {
+		color: #858890;
+		a {
+			color: #858890;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	& + .breadcrumb-item {
+		padding-left: 1.1rem;
+
+		&:before {
+			content: '\f0da';
+			font-family: "Font Awesome 5 Pro";
+			padding-right: 1.1rem;
+			font-size: 1.4rem;
+			font-weight: 300;
+			color: #858890;
+			vertical-align: middle;
+			margin-top: -.1rem;
+		}
+	}
+}

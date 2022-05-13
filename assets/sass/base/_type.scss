@@ -1,0 +1,315 @@
+// Headings
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-bottom: 2.5rem;
+	color: $primary-color;
+	font-weight: 800;
+	line-height: 1.25;
+}
+
+h1, .h1 {
+	font-size: 8rem;
+	line-height: 10rem;
+	@include mq(lg, max) {
+		font-size: calc(20px + (80 - 20) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(40px + (100 - 40) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h2, .h2 {
+	font-size: 6rem;
+	line-height: 8rem;
+	@include mq(lg, max) {
+		font-size: calc(18px + (60 - 18) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(38px + (80 - 38) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h3, .h3 {
+	font-size: 5rem;
+	line-height: 7rem;
+	@include mq(lg, max) {
+		font-size: calc(16px + (50 - 16) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(36px + (70 - 36) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h3.sub-title {
+	font-size: 4rem;
+	line-height: 6rem;
+	@include mq(lg, max) {
+		font-size: calc(15px + (40 - 15) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(35px + (60 - 35) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h4, .h4 {
+	font-size: 2.4rem;
+	line-height: 4.4rem;
+	@include mq(lg, max) {
+		font-size: calc(14px + (24 - 14) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(29px + (44 - 29) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h4.sub-title {
+	font-size: 3rem;
+	@include mq(lg, max) {
+		font-size: calc(15px + (30 - 15) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(25px + (50 - 25) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h5, .h5 {
+	font-size: 2rem;
+	line-height: 4rem;
+	@include mq(lg, max) {
+		font-size: calc(14px + (20 - 14) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(34px + (40 - 34) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+h6, .h6 {
+	font-size: 1.4rem;
+	line-height: 1;
+	@include mq(lg, max) {
+		font-size: calc(12px + (14 - 12) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(15px + (20 - 15) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+//Figure 
+figure {
+	border-radius: 3rem;
+	overflow: hidden;
+}
+img {
+	&.avatar {
+		border-radius: 50%;
+	}
+}
+// Anchor
+
+a {
+	transition: all .3s;
+	text-decoration: none;
+	color: $body-text-color;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+	color: $primary-color;
+	text-decoration: none;
+	outline: none;
+}
+
+// i
+i {
+	font-style: normal !important;
+}
+
+// ul
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+//p
+p {
+	line-height: 3rem;
+	letter-spacing: .02em;
+	@include mq(lg, max) {
+		font-size: calc(15px + (18 - 15) * ((100vw - 200px) / (992 - 200)));
+		line-height: calc(27px + (30 - 27) * ((100vw - 200px) / (992 - 200)));
+	}
+}
+
+//span 
+span {
+	font-size: 1.6rem;
+	line-height: 3rem;
+	letter-spacing: .02em;
+}
+
+//sup
+sup {
+	font-size: 65%;
+}
+
+// Type Helpers
+.text-transform-none {
+	text-transform: none;
+}
+
+//Height 
+.height-100vh {
+	height: 100vh !important;
+}
+.height-auto {
+	height: auto;
+}
+
+// Letter Spacing
+.ls-20 {
+	letter-spacing: .02em !important;
+}
+
+.ls-0 {
+	letter-spacing: 0 !important;
+}
+
+.ls-n-10 {
+	letter-spacing: -.01em !important;
+}
+
+.ls-n-15 {
+	letter-spacing: -.015em !important;
+}
+
+.ls-n-20 {
+	letter-spacing: -.02em !important;
+}
+
+.ls-n-25 {
+	letter-spacing: -.025em !important;
+}
+
+//opacity   
+.opacity-1 {
+	opacity: 1 !important;
+}
+.opacity-7 {
+	opacity: .7 !important;
+}
+
+//Text
+.text-underline {
+	text-decoration-line: underline !important;
+}
+
+// background-Color
+.bg-gradient {
+	background: linear-gradient(#a6c4ce, #c2d3d8, #d0dfe4);
+}
+.bg-primary-color {
+	background-color: $primary-color !important;
+}
+.bg-secondary-color {
+	background-color: $secondary-color !important;
+}
+.bg-third-color {
+	background-color: #80bf2f !important;
+}
+.bg-fourth-color {
+	background-color: #ff9712 !important;
+}
+.bg-light-color {
+	background-color: #b2dded !important;
+}
+.bg-more-light {
+	background-color: #ebf6fa !important;
+}
+.bg-white-color {
+	background-color: #fff !important;
+}
+.bg-image {
+	background-color: #ccc;
+	background-size: cover;
+	background-position: 76%;
+	background-repeat: no-repeat;
+}
+
+//Color 
+.primary-color {
+	color: $primary-color !important;
+}
+.secondary-color {
+	color: $secondary-color !important;
+}
+
+//font-size 
+.font-size-20 {
+	font-size: 2rem !important;
+}
+
+//Border
+.border-2 {
+	border: 2px solid $primary-color;
+}
+.border-none {
+	border: none !important;
+}
+
+// Line Height
+.line-height-1 {
+	line-height: 1 !important;
+}
+
+// Font Family
+.font1 {
+	font-family: $font-family !important;
+}
+.font2 {
+	font-family: $second-font-family !important;
+}
+
+// Width Helpers
+
+@include mq(md, max) {
+	.w-md-100 {
+		width: 100% !important;
+	}
+
+	.w-md-50 {
+		width: 50% !important;
+	}
+}
+
+@include mq(sm, max) {
+	.w-sm-100 {
+		width: 100% !important;
+	}
+
+	.w-sm-50 {
+		width: 50% !important;
+	}
+}
+
+@include mq(xs, max) {
+	.w-xs-100 {
+		width: 100% !important;
+	}
+}
+
+@include mq(480px, max) {
+	.w-xs-100 {
+		width: 100% !important;
+	}
+}
+
+@include mq(400px, max) {
+	.w-xxs-100 {
+		width: 100% !important;
+	}
+}
+
+
+// Responsive
+
+// @include mq(md,max) {
+// 	h2 {
+// 		font-size: 3.5rem;
+// 	}
+// 	h3.sub-title {
+// 		font-size: 2.8rem;
+// 	}
+// 	h4.sub-title {
+// 		font-size: 2.4rem;
+// 	}
+// }

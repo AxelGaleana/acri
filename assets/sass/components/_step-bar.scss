@@ -1,0 +1,92 @@
+// Step Bar
+
+.step-bar {
+    position: relative;
+    height: 83px;
+    .steps-progress {
+        position: absolute;
+        top: 50%;
+        height: 4px;
+        width: 100%;
+        background-color: #eb493e;
+        transform: translateY(-50%);
+        .progress-indicator {
+            height: 100%;
+            background-color: #fff;
+        }
+    }
+    .nav-step {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+        padding-top: 2rem;
+        z-index: 2;
+        &::after {
+            display: inline-block;
+            width: 100%;
+            content: '.';
+            font-size: 0;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+    }
+    .nav-item {
+        display: inline-block;
+        z-index: 1;
+        
+        span {
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: .02em;
+        }
+        .check-circle {
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        &.active {
+            .check-circle {
+                background-color: #fff;
+                color: $primary-color;
+            }
+        }
+        &.completed {
+            .nav-link {
+                background-color: #fff;
+            }
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        height: 4.3rem;
+        width: 188px;
+        border-radius: 25px;
+        background-color: #eb493e;
+    }
+    .check-circle {
+        background-color: $secondary-color;
+        color: #fff;
+        margin-right: 1rem;
+    }
+}
+
+@include mq(md, max) {
+    .step-bar .nav-link {
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+        padding: 0;
+        .check-circle {
+            margin: 0;
+        }
+        span {
+            display: none;
+        }
+    }
+}

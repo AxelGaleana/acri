@@ -1,0 +1,28 @@
+// Article
+
+.article {
+    border-bottom: 2px dotted #b2dded;
+    //margin-bottom: 3.5rem;
+    padding: 3.3rem 0 4rem 0;
+    .article-title {
+        //margin-top: 4rem;
+        margin-bottom: 3.4rem;
+        line-height: 3.4rem;
+    }
+    .article-question {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        letter-spacing: 0;
+        line-height: 3.4rem;
+    }
+    .btn-link {
+        font-size: 1.4rem;
+        line-height: 3.4rem;
+    }
+    @include mq(lg, max) {
+        padding: 2rem 0 2.1rem 0; 
+        .article-title {
+            margin-bottom: 1rem;
+        }
+    }
+}
