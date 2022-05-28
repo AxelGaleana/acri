@@ -65,7 +65,7 @@ loading overlay - end
         <br>
         <!--<div class="" id="whatsapp">-->
         <div class="" id="book" style="margin-right: -8px">
-            <a href="https://api.whatsapp.com/send?phone=524424711047&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
+            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
                target="_blank">
                 <i class="fab fa-whatsapp fa-3x" style="color:green"></i>
             </a>
@@ -732,33 +732,93 @@ loading overlay - end
                         certificados</h2>
                 </div>
             </div>
+
+            <?php 
+                $array_names = array(   
+                                        "David Figueroa Espinosa", 
+                                        "Luisa Cal y Mayor",
+                                        "Magdalena Bárcenas R.",
+                                        "Amelia Cervantes",
+                                        "Diana Espinosa",
+                                        "Martha Laura Ramos",
+                                        "Mayra Sánchez",
+                                        "Saúl Luengas Ramos",
+                                        "Susana Rosales",
+                                        "Valeria Pineda"
+                                    );
+                $array_photo_names = array(   
+                                        "David_Figueroa_Espinosa.JPG", 
+                                        "Luisa_Cal_y_Mayor.JPG",
+                                        "Magdalena_Barcenas.JPG",
+                                        "Amelia_Cervantes.JPG",
+                                        "Diana_Espinosa.JPG",
+                                        "Martha_Laura_Ramos.JPG",
+                                        "Mayra_Sanchez.JPG",
+                                        "Saul_Luengas_Ramos.JPG",
+                                        "Susana_Rosales.JPG",
+                                        "Valeria_Pineda.JPG"
+                                    );
+                $array_title = array(
+                                        "Radiólogo y Operador en Piedica", 
+                                        "Terapeuta en Rehabilitación Acuática",
+                                        "Administrativo Contable",
+                                        "LTF Terapeuta Física",
+                                        "LTF Asistente Médico",
+                                        "Gerente Administrativo",
+                                        "LTF Terapeuta Física",
+                                        "Marketing",
+                                        "LTF Terapeuta Física",
+                                        "LTF Terapeuta Física"
+                                    );
+                $array_desc = array(
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.", 
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions."
+                );
+                $employee1 = rand(0, 9);
+                $employee2 = rand(0, 9);
+                while ($employee2 == $employee1)
+                {
+                    $employee2 = rand(0, 9);
+                }
+            ?> 
+
             <div class="row d-flex justify-content-center">
 
-                <div class="image-box doctor-card col-lg-4 col-sm-8 col-10" style="margin-top:10vh">
-                    <br><br>
-                    <figure>
-                        <a href="doctors-detailed.html">
-                            <img src="assets/images/doctors/david-figueroa.JPG" class="w-75" alt="Doctor" width="370"
-                                 height="407">
-                            <div class="hover">
-                                <div class="circle">
-                                    <i class="fas fa-link"></i>
+
+                <?php
+                    echo "<div class=\"image-box doctor-card col-lg-4 col-sm-8 col-10\" style=\"margin-top:10vh\">
+                        <br><br>
+                        <figure>
+                            <a href=\"doctors-detailed.html\">
+                                <img src=\"assets/images/doctors/$array_photo_names[$employee1]\" class=\"w-75\" alt=\"Doctor\" width=\"370\"
+                                    height=\"407\">
+                                <div class=\"hover\">
+                                    <div class=\"circle\">
+                                        <i class=\"fas fa-link\"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </figure>
-                    <div class="box-content">
-                        <h4 class="box-title">David Figueroa Espinosa
-                        </h4>
-                        <p class="doctor-cat">Radiólogo y Operador en Piedica
-                        </p>
-                        <p class="box-desc">
-                            All of our doctors are highly <br> skilled and have a minimum of <br>
-                            15 years experience in U.S top <br> healthcare institutions.
-                        </p>
-                        <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
+                            </a>
+                        </figure>
+                        <div class=\"box-content\">
+                            <h4 class=\"box-title\">$array_names[$employee1]
+                            </h4>
+                            <p class=\"doctor-cat\">$array_title[$employee1]
+                            </p>
+                            <p class=\"box-desc\">
+                                $array_desc[$employee1]
+                            </p>
+                            <a href=\"javascript:;\" class=\"btn-toggle\"><i class=\"fas fa-plus-circle\"></i></a>
+                        </div>
+                    </div>";
+                ?>
                 <div class="image-box doctor-card col-lg-4 col-sm-8 col-10">
 
                     <figure>
@@ -783,31 +843,32 @@ loading overlay - end
                         <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
-                <div class="image-box doctor-card col-lg-4 col-sm-8 col-10" style="margin-top:7vh">
-                    <br><br>
-                    <figure>
-                        <a href="doctors-detailed.html">
-                            <img src="assets/images/doctors/dra-luisa-cal.JPG" class="w-75" alt="Doctor" width="370"
-                                 height="407">
-                            <div class="hover">
-                                <div class="circle">
-                                    <i class="fas fa-link"></i>
+                <?php
+                    echo "<div class=\"image-box doctor-card col-lg-4 col-sm-8 col-10\" style=\"margin-top:10vh\">
+                        <br><br>
+                        <figure>
+                            <a href=\"doctors-detailed.html\">
+                                <img src=\"assets/images/doctors/$array_photo_names[$employee2]\" class=\"w-75\" alt=\"Doctor\" width=\"370\"
+                                    height=\"407\">
+                                <div class=\"hover\">
+                                    <div class=\"circle\">
+                                        <i class=\"fas fa-link\"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </figure>
-                    <div class="box-content">
-                        <h4 class="box-title">Luisa Cal y Mayor
-                        </h4>
-                        <p class="doctor-cat">Terapeuta en Rehabilitación Acuática
-                        </p>
-                        <p class="box-desc">
-                            All of our doctors are highly <br> skilled and have a minimum of <br>
-                            15 years experience in U.S top <br> healthcare institutions.
-                        </p>
-                        <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
+                            </a>
+                        </figure>
+                        <div class=\"box-content\">
+                            <h4 class=\"box-title\">$array_names[$employee2]
+                            </h4>
+                            <p class=\"doctor-cat\">$array_title[$employee2]
+                            </p>
+                            <p class=\"box-desc\">
+                                $array_desc[$employee2]
+                            </p>
+                            <a href=\"javascript:;\" class=\"btn-toggle\"><i class=\"fas fa-plus-circle\"></i></a>
+                        </div>
+                    </div>";
+                ?>
             </div>
 
             <div class="row btn-row">
