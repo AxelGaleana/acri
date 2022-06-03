@@ -114,7 +114,7 @@ loading overlay - end
                             <ul class="sub-menu">
                                 <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
                                 <li class="li-with-arrow">
-                                    <a href="doctors.html"><i class="fas fa-angle-right"></i>Blog<i
+                                    <a href="doctores.html"><i class="fas fa-angle-right"></i>Blog<i
                                             class="far fa-caret-right"></i></a>
                                 </li>
                             </ul>
@@ -464,7 +464,7 @@ loading overlay - end
                                 Agenda un espacio con nuestros especialistas.
                                 Contamos con un equipo multifuncional de expertos.
                             </p>
-                            <a href="doctors.html" class="btn btn-sm btn-secondary-color btn-secondary-color-1 ls-0">
+                            <a href="doctores.html" class="btn btn-sm btn-secondary-color btn-secondary-color-1 ls-0">
                                 <span>Conoce a nuestros especialistas certificados</span>
                             </a>
                         </div>
@@ -874,7 +874,7 @@ loading overlay - end
             <div class="row btn-row">
                 <div class="col-lg-12 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                     <div class="banner-actions d-flex justify-content-center">
-                        <a href="doctors.html" class="btn btn-action btn-secondary-color">
+                        <a href="doctores.html" class="btn btn-action btn-secondary-color">
                             <span>Conoce a los doctores</span>
                         </a>
                     </div>
@@ -974,7 +974,7 @@ loading overlay - end
                 <div class="post-box col-lg-4 col-md-8 col-sm-8 col-10">
                     <figure>
                         <a href="blog-detailed.html">
-                            <img src="assets/images/blog/blog1-1.jpg" alt="Blog" width="370" height="257">
+                            <img src="assets/images/blog/ejemplo.jpg" alt="Blog" width="370" height="257">
                             <div class="hover">
                                 <div class="circle">
                                     <i class="fas fa-link"></i>
@@ -983,13 +983,11 @@ loading overlay - end
                         </a>
                     </figure>
                     <div class="box-content">
-                        <h4 class="box-title"><a href="blog-detailed.html">Can you get a diflucan prescription
-                            online?</a></h4>
+                        <h4 class="box-title"><a href="blog-detailed.html">Me duelen los pies constantemente después de caminar…¿Es normal? </a></h4>
                         <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a
                                 href="blog-detailed.html">2 Comments</a></p>
                         <p class="post-desc">
-                            Fowl don't sea fill of divided by create female don't man image
-                            female wherein night ...
+                            El dolor es una señal que manda nuestro cuerpo, emitida por el sistema nervioso y se percibe como una sensación desagradable. ...
                         </p>
                     </div>
                 </div>
@@ -1160,7 +1158,7 @@ loading overlay - end
                     <a href="#" class="sf-with-ul">Standard Pages</a>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="doctores.html">Our Doctors</a></li>
                         <li><a href="doctors-detailed.html">Doctor (Detailed)</a></li>
                         <li><a href="departments-1.html">Departments (Style 01)</a></li>
                         <li><a href="departments-2.html">Departments (Style 02)</a></li>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<title>Caremed - Blog Masonry</title>
+
+	<meta name="keywords" content="Caremed HTML5 Responsive Template Medicine COVID-19 Corona Hospital" />
+	<meta name="description" content="Caremed - Hospital HTML5 Responsive Template">
+		
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+	
+	
+	
+	<!-- Plugins CSS File -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/datepicker.min.css">
+
+	<!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+	
+</head>
+<body>
+    <!------------------------------------------------
+	loading overlay - start
+	------------------------------------------------>
+	<div class="loading-overlay">
+		<div class="bounce-loader">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+	<!------------------------------------------------
+	loading overlay - end
+	------------------------------------------------>
+    <div class="page-wrapper">
+        <!------------------------------------------------
+		navigation - start
+		------------------------------------------------>
+        <div class="fixed-bottom text-right mr-5 mb-12">
+            <!--
+            <div class="" id="book" style="margin-right: -8px">
+                <button onclick="showApointer()" style="border: transparent;background: transparent;color: #ff594d;cursor: pointer"><img
+                        src="./assets/images/icons/agenda-icon.png" width="52" height="52"></button>
+            </div>
+            -->
+            <br>
+            <!--<div class="" id="whatsapp">-->
+            <div class="" id="book" style="margin-right: -8px">
+                <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
+                   target="_blank">
+                    <i class="fab fa-whatsapp fa-3x" style="color:green"></i>
+                </a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="header-left">
+                        <ul class="top-menu top-link-menu">
+                            <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>xxx-xxx-xxx</a></li>
+                            <li><a href="#" class="link-email"><i class="fas fa-envelope-open"></i>example@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <ul class="top-menu">
+                            <li><a href="#" class="social-link"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#" class="social-link"><i class="fab fa-facebook"></i>Facebook</a></li>
+                            <li><a href="#" class="social-link"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="header-middle sticky-header">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <br><br>
+                        <h1 class="mb-0"><img src="assets/images/logo.png" alt="Caremed Logo" width="185" height="48"></h1>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <button class="mobile-menu-toggler">
+                        <span class="sr-only">Toggle mobile menu</span>
+                        <i class="fal fa-bars"></i>
+                    </button>
+                    <nav class="main-nav ls-20">
+                        <ul class="menu sf-arrows">
+                            <li class="megamenu-container active">
+                                <a href="index.html" class="sf-with-ul">Inicio<i class="fas fa-caret-down"></i></a>
+    
+                            </li>
+                            <li>
+                                <a href="#" class="sf-with-ul">Paginas<i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
+                                    <li class="li-with-arrow">
+                                        <a href="doctores.html"><i class="fas fa-angle-right"></i>Blog<i
+                                                class="far fa-caret-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="blog-masonry.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="treatments.html">Tratamientos</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">Tienda</a>
+                            </li>
+                        </ul><!-- End .menu -->
+                    </nav><!-- End .main-nav -->
+                    <div class="header-search">
+                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
+                        <form action="#" class="header-search-wrapper">
+                            <label for="q" class="sr-only">Search</label>
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
+                                   required="">
+                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
+                        <span style="color:white">Agendar Una Cita</span>
+                    </a>
+                    <!----
+                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
+                    <a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
+                        <span>Sign in</span>
+                    </a>
+                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </header>
+		<!------------------------------------------------
+		navigation - end
+		------------------------------------------------>
+        <main class="main">
+            <!------------------------------------------------
+		    page header - start
+		    ------------------------------------------------>
+            <div class="page-header bg-more-light">
+                <div class="container">
+                    <h2 class="page-title">Especialistas </h2>
+                    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                            <li class="breadcrumb-item active"><a href="index.php">Paginas</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Especialistas</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!------------------------------------------------
+		    page header - end
+		    ------------------------------------------------>
+            <!------------------------------------------------
+		    content - start
+		    ------------------------------------------------>
+            <!--<div class="container blog-masonry-section padding-small"></div>-->
+                
+            
+            <div class="container doctor-list-section">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                        <h2 class="ls-n-20 text-center section-heading mb-3">Conoce a nuestros expertos y especialistas calificados.</h2>
+                    </div>
+                </div>
+                <div class="row grid-container" id="doctors" data-layout="fitRows">
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-anesthesiologist">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/dr-saul2.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Saul Luengas Castillo</h4>
+                                <p class="doctor-cat">Dr. Quiropractico</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-pathologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                
+                                    <img src="assets/images/doctors/David_Figueroa_Espinosa.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">David Figueroa Espinosa</h4>
+                                <p class="doctor-cat">Radiólogo y Operador en Piedica</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-podiatrists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Luisa_Cal_y_Mayor.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Luisa Cal y Mayor</h4>
+                                <p class="doctor-cat">Terapeuta en Rehabilitación Acuática</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-internists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Magdalena_Barcenas.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Magdalena Bárcenas R.</h4>
+                                <p class="doctor-cat">Administrativo Contable</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-ophthalmologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Amelia_Cervantes.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Amelia Cervantes</h4>
+                                <p class="doctor-cat">LTF Terapeuta Física</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-radiologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Diana_Espinosa.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Diana Espinosa</h4>
+                                <p class="doctor-cat">LTF Asistente Médico</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-nephrologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Martha_Laura_Ramos.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Martha Laura Ramos</h4>
+                                <p class="doctor-cat">Gerente Administrativo</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-oncologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Mayra_Sanchez.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Mayra Sánchez</h4>
+                                <p class="doctor-cat">LTF Terapeuta Física</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-general-surgeons">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Saul_Luengas_Ramos.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Saúl Luengas Ramos</h4>
+                                <p class="doctor-cat">Marketing</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-nephrologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Susana_Rosales.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Susana Rosales</h4>
+                                <p class="doctor-cat">LTF Terapeuta Física</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 pf-oncologists">
+                        <div class="image-box doctor-card mt-3">
+                            <figure>
+                                <a href="doctors-detailed.html">
+                                    <img src="assets/images/doctors/Valeria_Pineda.jpg" class="w-75" alt="Doctor" width="370" height="407">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title">Valeria Pineda</h4>
+                                <p class="doctor-cat">LTF Terapeuta Física</p>
+                                <p class="box-desc">
+                                    Dr. Amelia fraduated from the Universiy of Rochester School of Medicine and 
+                                    Dentistry in 1990 and then she completed her residency at Yale Unversity Medical Center.
+                                </p>
+                                <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--</main>-->
+            <!------------------------------------------------
+		    content - end
+		    ------------------------------------------------>
+        </main>
+        <!------------------------------------------------
+		footer - start
+		------------------------------------------------>
+		<footer class="footer bg-primary-color">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-lg-6 col-sm-7 col-10">
+							<a href="index.php" class="logo">
+								<img src="assets/images/logo-sm.png" alt="Caremed Logo" width="185" height="48">
+							</a>
+						</div>
+						<div class="col-lg-6 col-sm-7 col-10 d-lg-flex justify-content-lg-end">
+							<div class="social-links">
+								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row d-flex justify-content-center">
+							<div class="col-lg-3 col-sm-7 col-10">
+								<div class="info-box">
+									<h6 class="info-title">Company</h6>
+									<ul class="info-list">
+										<li><a href="#" class="info-link">About</a></li>
+										<li><a href="#" class="info-link">Our Doctors</a></li>
+										<li><a href="#" class="info-link">Latest Blog</a></li>
+										<li><a href="#" class="info-link">Careers</a></li>
+										<li><a href="#" class="info-link">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-7 col-10">
+								<div class="info-box">
+									<h6 class="info-title">Support</h6>
+									<ul class="info-list">
+										<li><a href="#" class="info-link">Reviews</a></li>
+										<li><a href="#" class="info-link">FAQs</a></li>
+										<li><a href="#" class="info-link">Help Center</a></li>
+										<li><a href="#" class="info-link">Doctors</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-7 col-10">
+								<div class="info-box">
+									<h6 class="info-title">Legal</h6>
+									<ul class="info-list">
+										<li><a href="#" class="info-link">Term of use</a></li>
+										<li><a href="#" class="info-link">Code of Conduct</a></li>
+										<li><a href="#" class="info-link">Privacy Policy</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-7 col-10">
+								<div class="info-box">
+									<h6 class="info-title">Company</h6>
+									<form class="input-group input-footer">
+										<input type="email" class="form-control" placeholder="Email address" required>
+										<button type="submit" class="form-action"><i class="fas fa-check-circle"></i></button>
+									</form>
+									<p>Unsubscribe anytime.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12 col-sm-7 col-10">
+							<p>© GFXPARTNER</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!------------------------------------------------
+		footer - end
+		------------------------------------------------>
+    </div>
+    
+    <button id="scroll-top" title="Back to Top"><i class="fal fa-angle-up"></i></button>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu-container mobile-menu-light">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
+
+            <form class="input-group input-light input-search" action="#">
+                                <input type="text" class="form-control search-control" placeholder="search" required>
+                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                            </form>
+            
+            <nav class="mobile-nav mt-5">
+                <ul class="mobile-menu">
+                    <li>
+                        <a href="#"  class="sf-with-ul">Home Pages</a>
+
+                        <ul>
+                            <li><a href="index.php">Home 1</a></li>
+                            <li><a href="index-2.html">Home 2</a></li>
+                            <li><a href="index-3.html">Home 3</a></li>
+                            <li><a href="index-4.html">Home 4</a></li>
+                            <li><a href="index-5.html">Home 5</a></li>
+                            <li><a href="index-6.html">Home 6</a></li>
+                            <li><a href="index-7.html">Home 7</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sf-with-ul">Standard Pages</a>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="doctors.html">Our Doctors</a></li>
+                            <li><a href="doctors-detailed.html">Doctor (Detailed)</a></li>
+                            <li><a href="departments-1.html">Departments (Style 01)</a></li>
+                            <li><a href="departments-2.html">Departments (Style 02)</a></li>
+                            <li><a href="departments-detailed.html">Departments (Detailed)</a></li>
+                            <li><a href="treatments.html">Treatments</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="help.html">Help</a></li>
+                            <li><a href="help-questions.html">Help Questions</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sf-with-ul">Blog Pages</a>
+                        <ul>
+                            <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                            <li><a href="blog-right-sidebar.html">Blog Masonry (Right Sidebar)</a></li>
+                            <li><a href="blog-left-sidebar.html">Blog Masonry (Left Sidebar)</a></li>
+                            <li><a href="blog-detailed.html">Blog Detailed</a></li>
+                            <li><a href="blog-detailed-sidebar.html">Blog Detailed Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sf-with-ul">Appointments</a>
+                        <ul>
+                            <li><a href="appointment-step1.html">Appointment (Step01)</a></li>
+                            <li><a href="appointment-step2.html">Appointment (Step02)</a></li>
+                            <li><a href="appointment-step3.html">Appointment (Step03)</a></li>
+                            <li><a href="appointment-step4.html">Appointment (Step04)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sf-with-ul">Login Pages</a>
+                        <ul>
+                            <li><a href="login.html">Signin</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- End .mobile-nav -->
+
+            <div class="social-icons mt-6">
+                <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+            </div><!-- End .social-icons -->
+
+            <div class="mobile-actions">
+                <a href="appointment-step1.html" class="btn btn-secondary-color btn-xs">Book Appointment</a>
+                <a href="login.html" class="btn btn-xs">Signin</a>
+            </div><!-- End .mobile-actions -->
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+    
+    
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="assets/js/plugins/datepicker.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+
+    
+    <!-- Main JS File -->
+    <script src="assets/js/main.min.js"></script>
+    
+</body>
+</html>
