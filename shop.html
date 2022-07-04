@@ -42,13 +42,30 @@
         <!------------------------------------------------
 		navigation - start
 		------------------------------------------------>
-		<header class="header">
+        <div class="fixed-bottom text-right mr-5 mb-12">
+            <!--
+            <div class="" id="book" style="margin-right: -8px">
+                <button onclick="showApointer()" style="border: transparent;background: transparent;color: #ff594d;cursor: pointer"><img
+                        src="./assets/images/icons/agenda-icon.png" width="52" height="52"></button>
+            </div>
+            -->
+            <br>
+            <!--<div class="" id="whatsapp">-->
+            <div class="" id="book" style="margin-right: -8px">
+                <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
+                   target="_blank">
+                    <i class="fab fa-whatsapp fa-3x" style="color:green"></i>
+                </a>
+            </div>
+        </div>
+        <header class="header">
             <div class="header-top">
                 <div class="container-fluid">
                     <div class="header-left">
                         <ul class="top-menu top-link-menu">
-                            <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>(800) 388 4455</a></li>
-                            <li><a href="#" class="link-email"><i class="fas fa-envelope-open"></i>contact@medcare.com</a></li>
+                            <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>442-720-0627</a></li>
+                            <li><a href="mailto:contacto@acrimexico.com?subject=Agendar cita" class="link-email"><i class="fas fa-envelope-open"></i>contacto@acrimexico.com</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -59,11 +76,12 @@
                         </ul>
                     </div>
                 </div>
-                
+    
             </div>
             <div class="header-middle sticky-header">
                 <div class="header-left">
                     <a href="index.php" class="logo">
+                        <br><br>
                         <h1 class="mb-0"><img src="assets/images/logo.png" alt="Caremed Logo" width="185" height="48"></h1>
                     </a>
                 </div>
@@ -75,18 +93,18 @@
                     <nav class="main-nav ls-20">
                         <ul class="menu sf-arrows">
                             <li class="megamenu-container active">
-                                <a href="index.php" class="sf-with-ul">Inicio<i class="fas fa-caret-down"></i></a>
-
+                                <a href="index.php" class="sf-with-ul">Inicio<!--<i class="fas fa-caret-down">--></i></a>
+    
                             </li>
                             <li>
-                                <a href="#" class="sf-with-ul">Paginas<i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
+                                <a href="blogs/instalaciones.html" class="sf-with-ul">Quienes Somos<!--<i class="fas fa-caret-down">--></i></a>
+                                <!--<ul class="sub-menu">
                                     <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
                                     <li class="li-with-arrow">
-                                        <a href="doctors.html"><i class="fas fa-angle-right"></i>Blog<i
+                                        <a href="doctores.html"><i class="fas fa-angle-right"></i>Blog<i
                                                 class="far fa-caret-right"></i></a>
                                     </li>
-                                </ul>
+                                </ul>-->
                             </li>
                             <li>
                                 <a href="blog-masonry.html">Blog</a>
@@ -103,17 +121,19 @@
                         <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
                         <form action="#" class="header-search-wrapper">
                             <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..." required="">
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
+                                   required="">
                             <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
-                    <a href="appointment-step1.html" class="btn btn-sm btn-primary-color ls-0">
-						<span>Book an Appointment</span>
-					</a>
-                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>
-                    <a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-						<span>Sign in</span>
-					</a>
+                    <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
+                        <span style="color:white">Agendar Una Cita</span>
+                    </a>
+                    <!----
+                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
+                    <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
+                        <span>Sign in</span>
+                    </a>-->
                     <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
                 </div>
             </div>
@@ -167,55 +187,6 @@
 								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
 								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
 								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-middle">
-					<div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Company</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">About</a></li>
-										<li><a href="#" class="info-link">Our Doctors</a></li>
-										<li><a href="#" class="info-link">Latest Blog</a></li>
-										<li><a href="#" class="info-link">Careers</a></li>
-										<li><a href="#" class="info-link">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Support</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">Reviews</a></li>
-										<li><a href="#" class="info-link">FAQs</a></li>
-										<li><a href="#" class="info-link">Help Center</a></li>
-										<li><a href="#" class="info-link">Doctors</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Legal</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">Term of use</a></li>
-										<li><a href="#" class="info-link">Code of Conduct</a></li>
-										<li><a href="#" class="info-link">Privacy Policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Company</h6>
-									<form class="input-group input-footer">
-										<input type="email" class="form-control" placeholder="Email address" required>
-										<button type="submit" class="form-action"><i class="fas fa-check-circle"></i></button>
-									</form>
-									<p>Unsubscribe anytime.</p>
-								</div>
 							</div>
 						</div>
 					</div>

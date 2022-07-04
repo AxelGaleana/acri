@@ -42,13 +42,30 @@
         <!------------------------------------------------
 		navigation - start
 		------------------------------------------------>
-		<header class="header">
+        <div class="fixed-bottom text-right mr-5 mb-12">
+            <!--
+            <div class="" id="book" style="margin-right: -8px">
+                <button onclick="showApointer()" style="border: transparent;background: transparent;color: #ff594d;cursor: pointer"><img
+                        src="./assets/images/icons/agenda-icon.png" width="52" height="52"></button>
+            </div>
+            -->
+            <br>
+            <!--<div class="" id="whatsapp">-->
+            <div class="" id="book" style="margin-right: -8px">
+                <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
+                   target="_blank">
+                    <i class="fab fa-whatsapp fa-3x" style="color:green"></i>
+                </a>
+            </div>
+        </div>
+        <header class="header">
             <div class="header-top">
                 <div class="container-fluid">
                     <div class="header-left">
                         <ul class="top-menu top-link-menu">
-                            <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>(800) 388 4455</a></li>
-                            <li><a href="#" class="link-email"><i class="fas fa-envelope-open"></i>contact@medcare.com</a></li>
+                            <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>442-720-0627</a></li>
+                            <li><a href="mailto:contacto@acrimexico.com?subject=Agendar cita" class="link-email"><i class="fas fa-envelope-open"></i>contacto@acrimexico.com</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -59,11 +76,12 @@
                         </ul>
                     </div>
                 </div>
-                
+    
             </div>
             <div class="header-middle sticky-header">
                 <div class="header-left">
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
+                        <br><br>
                         <h1 class="mb-0"><img src="assets/images/logo.png" alt="Caremed Logo" width="185" height="48"></h1>
                     </a>
                 </div>
@@ -75,18 +93,18 @@
                     <nav class="main-nav ls-20">
                         <ul class="menu sf-arrows">
                             <li class="megamenu-container active">
-                                <a href="index.html" class="sf-with-ul">Inicio<i class="fas fa-caret-down"></i></a>
-
+                                <a href="index.php" class="sf-with-ul">Inicio<!--<i class="fas fa-caret-down">--></i></a>
+    
                             </li>
                             <li>
-                                <a href="#" class="sf-with-ul">Paginas<i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
+                                <a href="blogs/instalaciones.html" class="sf-with-ul">Quienes Somos<!--<i class="fas fa-caret-down">--></i></a>
+                                <!--<ul class="sub-menu">
                                     <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
                                     <li class="li-with-arrow">
-                                        <a href="doctors.html"><i class="fas fa-angle-right"></i>Blog<i
+                                        <a href="doctores.html"><i class="fas fa-angle-right"></i>Blog<i
                                                 class="far fa-caret-right"></i></a>
                                     </li>
-                                </ul>
+                                </ul>-->
                             </li>
                             <li>
                                 <a href="blog-masonry.html">Blog</a>
@@ -94,23 +112,28 @@
                             <li>
                                 <a href="treatments.html">Tratamientos</a>
                             </li>
+                            <li>
+                                <a href="shop.html">Tienda</a>
+                            </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
                     <div class="header-search">
                         <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
                         <form action="#" class="header-search-wrapper">
                             <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..." required="">
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
+                                   required="">
                             <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
-                    <a href="appointment-step1.html" class="btn btn-sm btn-primary-color ls-0">
-						<span>Book an Appointment</span>
-					</a>
-                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>
-                    <a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-						<span>Sign in</span>
-					</a>
+                    <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
+                        <span style="color:white">Agendar Una Cita</span>
+                    </a>
+                    <!----
+                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
+                    <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
+                        <span>Sign in</span>
+                    </a>-->
                     <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
                 </div>
             </div>
@@ -127,8 +150,8 @@
                     <h2 class="page-title">Blogs Recientes </h2>
                     <nav aria-label="breadcrumb" class="breadcrumb-nav">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item active"><a href="index.html">Paginas</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                            <li class="breadcrumb-item active"><a href="index.php">Paginas</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Blogs Recientes</li>
                         </ol>
                     </nav>
@@ -141,7 +164,7 @@
 		    content - start
 		    ------------------------------------------------>
             <div class="container blog-masonry-section padding-small">
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-lg-12 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="blog-form d-lg-flex mb-2">
                             <div class="input-group input-light">
@@ -171,13 +194,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="grid row">
                     <div class="grid-sizer col-1"></div>
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                        <a href="#">
+                            <div class="post-box no-image">
+                                <div class="box-content bg-primary-color">
+                                    <h4 class="box-title">“La salud es la riqueza real y no piezas de oro y plata.”</h4>
+                                    <p class="post-date">Dec 13, 2020<span class="text-divider"></p>
+                                    <p class="post-author">-Mahatma Gandhi</p>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="post-box">
                             <figure>
-                                <a href="blog-detailed.html">
+                                <a href="blogs/dolor_pies.html">
                                     <img src="assets/images/blog/ejemplo.jpg" alt="Blog" width="370" height="257">
                                     <div class="hover">
                                         <div class="circle">
@@ -187,8 +221,8 @@
                                 </a>
                             </figure>
                             <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">Me duelen los pies constantemente después de caminar…¿Es normal? </a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
+                                <h4 class="box-title"><a href="blogs/dolor_pies.html">Me duelen los pies constantemente después de caminar…¿Es normal? </a></h4>
+                                <p class="post-date"><a href="#">Junio 9, 2022</a></p>
                                 <p class="post-desc">
                                     El dolor es una señal que manda nuestro cuerpo, emitida por el sistema nervioso y se percibe como una sensación desagradable...
                                 </p>
@@ -198,8 +232,8 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="post-box">
                             <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-2.jpg" alt="Blog" width="370" height="257">
+                                <a href="blogs/dolor_espalda.html">
+                                    <img src="assets/images/blog/dolor_espalda.jpg" alt="Blog" width="370" height="257">
                                     <div class="hover">
                                         <div class="circle">
                                             <i class="fas fa-link"></i>
@@ -208,11 +242,10 @@
                                 </a>
                             </figure>
                             <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html"><a href="blog-detailed.html">How long can corona virus live on surfaces?</a></a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
+                                <h4 class="box-title"><a href="blogs/dolor_espalda.html"><a href="blogs/dolor_espalda.html">Estoy cansado de tener dolor en mi espalda baja</a></a></h4>
+                                <p class="post-date"><a href="#">Junio 10, 2022</a></p>
                                 <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
+                                    El dolor en espalda baja se conoce como lumbalgia, la cual puede ser ocasionada por diversos factores como: mantener una mala postura por tiempo prolongado, no realizar actividad física...
                                 </p>
                             </div>
                         </div>
@@ -220,22 +253,8 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="post-box">
                             <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-3.jpg" alt="Blog" width="370" height="257">
-                                    <span class="btn-video"><i class="fas fa-play"></i></span>
-                                </a>
-                            </figure>
-                            <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">The uninsured and working class people.</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <div class="post-box">
-                            <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-6.jpg" alt="Blog" width="370" height="257">
+                                <a href="blogs/equilibrio.html">
+                                    <img src="assets/images/blog/Vertigo-ancianos.jpg" alt="Blog" width="370" height="257">
                                     <div class="hover">
                                         <div class="circle">
                                             <i class="fas fa-link"></i>
@@ -244,11 +263,10 @@
                                 </a>
                             </figure>
                             <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">The uninsured and working class people.</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
+                                <h4 class="box-title"><a href="blogs/equilibrio.html"><a href="blogs/equilibrio.html">¿Siente que pierde el equilibrio? ¿Se tropieza constantemente?</a></a></h4>
+                                <p class="post-date"><a href="#">Junio 11, 2022</a></p>
                                 <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
+                                    En la vejez, se observa principalmente el deterioro de ciertas capacidades físicas como la fuerza muscular, el equilibrio, la elasticidad y la resistencia aeróbica, entre otras...
                                 </p>
                             </div>
                         </div>
@@ -256,8 +274,8 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="post-box">
                             <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-4.jpg" alt="Blog" width="370" height="257">
+                                <a href="blogs/lesiones_deportistas.html">
+                                    <img src="assets/images/blog/Atleta_Dolor.jpg" alt="Blog" width="370" height="257">
                                     <div class="hover">
                                         <div class="circle">
                                             <i class="fas fa-link"></i>
@@ -266,32 +284,51 @@
                                 </a>
                             </figure>
                             <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">Can you get a diflucan prescription online?</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
+                                <h4 class="box-title"><a href="blogs/lesiones_deportistas.html"><a href="blogs/lesiones_deportistas.html">¡No puedo entrenar sin dolor!, Estoy cansado de lesionarme constantemente</a></a></h4>
+                                <p class="post-date"><a href="#">Junio 8, 2022</a></p>
                                 <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
+                                    Algunas de las lesiones en deportistas de alto rendimiento son: esguinces, desgarres, tendinopatías, luxaciones, fracturas, contracturas, sobrecarga muscular, entre otras...
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <a href="blog-detailed.html">
+                        <div class="post-box">
+                            <figure>
+                                <a href="blogs/cansancio_computadora.html">
+                                    <img src="assets/images/blog/Tiempoenpc.jpg" alt="Blog" width="370" height="257">
+                                    <div class="hover">
+                                        <div class="circle">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="box-content">
+                                <h4 class="box-title"><a href="blogs/cansancio_computadora.html"><a href="blogs/cansancio_computadora.html">¿Pasas mucho tiempo sentado frente a la computadora?</a></a></h4>
+                                <p class="post-date"><a href="#">Junio 7, 2022</a></p>
+                                <p class="post-desc">
+                                    Pasar largas jornadas de trabajo en una misma postura puede ocasionar lesiones músculo esqueléticas, como...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                        <a href="#">
                             <div class="post-box no-image">
-                                <div class="box-content bg-primary-color">
-                                    <h4 class="box-title">“Medicine is my lawful wife, and literature is my mistress.
-                                        When I get fed up with one, I spend the night with the other”</h4>
+                                <div class="box-content bg-secondary-color">
+                                    <h4 class="box-title">“Cuida de tu cuerpo, es el único lugar que tienes para vivir.”</h4>
                                     <p class="post-date">Dec 13, 2020<span class="text-divider">|</span>2 Comments</p>
-                                    <p class="post-author">-Anton Chehov</p>
+                                    <p class="post-author">-Jim Rohn</p>
                                 </div>
-                            </div>   
+                            </div>
                         </a>
                     </div>
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <div class="post-box">
                             <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-5.jpg" alt="Blog" width="370" height="257">
+                                <a href="blogs/instalaciones.html">
+                                    <img src="assets/images/blog/Instalaciones2.jpg" alt="Blog" width="370" height="257">
                                     <div class="hover">
                                         <div class="circle">
                                             <i class="fas fa-link"></i>
@@ -300,74 +337,15 @@
                                 </a>
                             </figure>
                             <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">How long can corona virus live on surfaces?</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
+                                <h4 class="box-title"><a href="blogs/instalaciones.html"><a href="blogs/instalaciones.html">Instalaciones </a></a></h4>
+                                <p class="post-date"><a href="#">Junio 7, 2022</a></p>
                                 <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
+                                    Normalizar el dolor, no está bien. Nosotros te ayudamos a recuperar el equilibrio en tu cuerpo...
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <div class="post-box">
-                            <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-7.jpg" alt="Blog" width="370" height="257">
-                                    <div class="hover">
-                                        <div class="circle">
-                                            <i class="fas fa-link"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </figure>
-                            <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">Can you get a diflucan prescription online?</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
-                                <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <div class="post-box">
-                            <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-8.jpg" alt="Blog" width="370" height="257">
-                                    <span class="btn-video"><i class="fas fa-play"></i></span>
-                                </a>
-                            </figure>
-                            <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">How long can corona virus live on surfaces?</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <div class="post-box">
-                            <figure>
-                                <a href="blog-detailed.html">
-                                    <img src="assets/images/blog/blog1-9.jpg" alt="Blog" width="370" height="257">
-                                    <div class="hover">
-                                        <div class="circle">
-                                            <i class="fas fa-link"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </figure>
-                            <div class="box-content">
-                                <h4 class="box-title"><a href="blog-detailed.html">How long can corona virus live on surfaces?</a></h4>
-                                <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
-                                <p class="post-desc">
-                                    Fowl don't sea fill of divided by create female don't man image
-                                    female wherein night ...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                    <!--<div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                         <a href="blog-detailed.html">
                             <div class="post-box no-image">
                                 <div class="box-content bg-secondary-color">
@@ -392,16 +370,16 @@
                                 <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a href="blog-detailed.html">2  Comments</a></p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="pagination mt-10">
+                <!--<div class="pagination mt-10">
                     <a href="#">1</a>
                     <a class="active" href="#">2</a>
                     <a href="#">3</a>
                     <a href="#"><i class="fas fa-ellipsis-h"></i></a>
                     <a href="#">12</a>
                     <a href="#"><i class="far fa-caret-right"></i></a>
-                </div>
+                </div>-->
             </div>
             <!------------------------------------------------
 		    content - end
@@ -415,7 +393,7 @@
 				<div class="footer-top">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="col-lg-6 col-sm-7 col-10">
-							<a href="index.html" class="logo">
+							<a href="index.php" class="logo">
 								<img src="assets/images/logo-sm.png" alt="Caremed Logo" width="185" height="48">
 							</a>
 						</div>
@@ -424,55 +402,6 @@
 								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
 								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
 								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-middle">
-					<div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Company</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">About</a></li>
-										<li><a href="#" class="info-link">Our Doctors</a></li>
-										<li><a href="#" class="info-link">Latest Blog</a></li>
-										<li><a href="#" class="info-link">Careers</a></li>
-										<li><a href="#" class="info-link">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Support</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">Reviews</a></li>
-										<li><a href="#" class="info-link">FAQs</a></li>
-										<li><a href="#" class="info-link">Help Center</a></li>
-										<li><a href="#" class="info-link">Doctors</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Legal</h6>
-									<ul class="info-list">
-										<li><a href="#" class="info-link">Term of use</a></li>
-										<li><a href="#" class="info-link">Code of Conduct</a></li>
-										<li><a href="#" class="info-link">Privacy Policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-7 col-10">
-								<div class="info-box">
-									<h6 class="info-title">Company</h6>
-									<form class="input-group input-footer">
-										<input type="email" class="form-control" placeholder="Email address" required>
-										<button type="submit" class="form-action"><i class="fas fa-check-circle"></i></button>
-									</form>
-									<p>Unsubscribe anytime.</p>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -510,7 +439,7 @@
                         <a href="#"  class="sf-with-ul">Home Pages</a>
 
                         <ul>
-                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="index.php">Home 1</a></li>
                             <li><a href="index-2.html">Home 2</a></li>
                             <li><a href="index-3.html">Home 3</a></li>
                             <li><a href="index-4.html">Home 4</a></li>
@@ -580,7 +509,142 @@
     </div><!-- End .mobile-menu-container -->
     
     
+    <form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 16%;left:74%" id="appointment">
+        <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
+            <button class="close-button" aria-label="Close alert" type="button" data-close>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <h4 class="sub-title ls-n-5 text-center">Agenda Una Cita</h4>
+        <div class="input-group input-light">
+            <h6 class="input-title">Nombre</h6>
+            <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Teléfono</h6>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="442-222-3333" required>
+            <input type="hidden" id="page" name="page" value="../blog-masonry.html">
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Email</h6>
+            <input id="email" name="email" type="tel" class="form-control" placeholder="contacto@acrimexico.com" required>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Department</h6>
+            <div class="form-control select-control">Please select<i class="far fa-angle-down"></i></div>
+            <ul class="option-menu" id="option_menu_1">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Most Recent</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Popular</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Oldest</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>All times</span></li>
+            </ul>
+        </div>-->
+        <div class="input-group input-light input-calendar-light">
+            <h6 class="input-title">Fecha</h6>
+            <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020" id="date" name="date">
+            <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Comentarios</h6>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Time</h6>
+            <div id="select_4" class="form-control select-control opacity-1">
+                <div class="check-circle"><i class="fas fa-check"></i></div>
+                <div class="primary-color">4:00<sup>PM</sup></div>
+                Available
+                <i class="far fa-angle-down"></i>
+            </div>
+            <ul class="option-menu" id="option_menu_4">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>5.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>6.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>7.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>8.00<sup>PM</sup></span></li>
+            </ul>
+        </div>-->
+        <button type="submit" class="btn btn-secondary-color btn-form">
+            <span>Agenda Una Cita</span>
+        </button>
+        <h6 class="input-title" id="resultMailSucess" style="display: none;color:green;font-style: italic">¡Gracias! Su petición fue enviada.</h6>
+        <h6 class="input-title" id="resultMailFail" style="display: none;color:red;font-style: italic">Hubo un problema al enviar petición.</h6>
+    </form>
+    
     <!-- Plugins JS File -->
+    <script>
+        var mailSent = findGetParameter("mailSend");
+        console.log(mailSent);
+        if(mailSent=="success") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailSucess').style.display = 'block';
+        }
+        else if(mailSent=="failure") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailFail').style.display = 'block';
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+    
+        function showApointer() {
+            topFunction();
+            if (document.getElementById('appointment').style.display == 'none') {
+                document.getElementById('appointment').style.display = 'block';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            } else {
+                document.getElementById('appointment').style.display = 'none';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            }
+    
+        }
+    
+        function hideApointer() {
+            document.getElementById('appointment').style.display = 'none';
+    
+    
+        }
+    
+        //Get the button
+        var book = document.getElementById("book");
+        //var whatsapp = document.getElementById("whatsapp");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                book.style.opacity = "1";
+                //whatsapp.style.opacity = "1";
+            } else {
+                book.style.opacity = "0";
+                //whatsapp.style.opacity = "0";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>

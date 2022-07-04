@@ -76,8 +76,8 @@ loading overlay - end
             <div class="container-fluid">
                 <div class="header-left">
                     <ul class="top-menu top-link-menu">
-                        <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>xxx-xxx-xxx</a></li>
-                        <li><a href="#" class="link-email"><i class="fas fa-envelope-open"></i>example@gmail.com</a>
+                        <li><a href="tel:#" class="link-phone"><i class="fas fa-phone"></i>442-720-0627</a></li>
+                        <li><a href="mailto:contacto@acrimexico.com?subject=Agendar cita" class="link-email"><i class="fas fa-envelope-open"></i>contacto@acrimexico.com</a>
                         </li>
                     </ul>
                 </div>
@@ -93,7 +93,7 @@ loading overlay - end
         </div>
         <div class="header-middle sticky-header">
             <div class="header-left">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <br><br>
                     <h1 class="mb-0"><img src="assets/images/logo.png" alt="Caremed Logo" width="185" height="48"></h1>
                 </a>
@@ -106,18 +106,18 @@ loading overlay - end
                 <nav class="main-nav ls-20">
                     <ul class="menu sf-arrows">
                         <li class="megamenu-container active">
-                            <a href="index.html" class="sf-with-ul">Inicio<i class="fas fa-caret-down"></i></a>
+                            <a href="index.php" class="sf-with-ul">Inicio<!--<i class="fas fa-caret-down">--></i></a>
 
                         </li>
                         <li>
-                            <a href="#" class="sf-with-ul">Paginas<i class="fas fa-caret-down"></i></a>
-                            <ul class="sub-menu">
+                            <a href="blogs/instalaciones.html" class="sf-with-ul">Quienes Somos<!--<i class="fas fa-caret-down">--></i></a>
+                            <!--<ul class="sub-menu">
                                 <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
                                 <li class="li-with-arrow">
                                     <a href="doctores.html"><i class="fas fa-angle-right"></i>Blog<i
                                             class="far fa-caret-right"></i></a>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </li>
                         <li>
                             <a href="blog-masonry.html">Blog</a>
@@ -126,7 +126,7 @@ loading overlay - end
                             <a href="treatments.html">Tratamientos</a>
                         </li>
                         <li>
-                            <a href="shop.html">Tienda</a>
+                            <a href="https://acrimexico.mercadoshops.com.mx/" target="_blank">Tienda</a>
                         </li>
                     </ul><!-- End .menu -->
                 </nav><!-- End .main-nav -->
@@ -144,9 +144,9 @@ loading overlay - end
                 </a>
                 <!----
                 <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
-                <a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
+                <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
                     <span>Sign in</span>
-                </a>
+                </a>-->
                 <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
             </div>
         </div>
@@ -175,18 +175,25 @@ loading overlay - end
                 the image is added to the .bg-section-19 class.
             -->
             <div class="banner intro-slide intro-slide-2 bg-section">
-
+            <div style="position: fixed; top: 1;z-index: -1;">
+                <video id="video" autoplay muted loop  style="width:100%; height:100%">
+                <source src="assets/images/demos/demo-4/slide/tunel_carpiano.webm" type="video/mp4" />
+                </video>
+            </div>
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="banner-content">
-                                    <h2 class="banner-title">
+                                    <h2 class="banner-title" style="color:white;">
                                         Que nada detenga tu potencial…
                                     </h2>
-                                    <p class="banner-info">
+                                    <p class="banner-info" style="color:white;">
                                         El Síndrome del túnel carpiano, el dolor de espalda baja, y el estrés son algunos de
                                         los principales problemas de salud más frecuentes en la vida laboral.
-                                        Agenda una cita. Leer Más.
                                     </p>
                                     <div class="banner-actions">
                                         <a onclick="showApointer()" class="btn btn-secondary-color">
@@ -213,7 +220,7 @@ loading overlay - end
                                                                     </div>
                                                                     <div class="input-group input-light">
                                                                         <h6 class="input-title">Email</h6>
-                                                                        <input type="email" class="form-control" placeholder="example@gmail.com">
+                                                                        <input type="email" class="form-control" placeholder="contacto@acrimexico.com">
                                                                     </div>
                                                                     <div class="input-group input-light">
                                                                         <h6 class="input-title">Department</h6>
@@ -252,9 +259,9 @@ loading overlay - end
                                                                 <!--<iframe id="ytplayer" type="text/html" width="135%" height="200%" src="assets/images/demos/demo-4/slide/productionID_4520181-converted.mp4?playlist=w9bcNGcAK38&amp;loop=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;disablekb=1&amp;modestbranding=1" frameborder="0" allowfullscreen="">
 
                                                                 </iframe>-->
-                                                                <video autoplay muted loop width="500" height="633">
+                                                                <!--<video autoplay muted loop width="500" height="633">
                                                                     <source src="assets/images/demos/demo-4/slide/productionID_4520181-converted.mp4" type="video/mp4" />
-                                                                </video>
+                                                                </video>-->
 
                             </div>
                         </div>
@@ -296,16 +303,21 @@ loading overlay - end
                     <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
                 </div>
             </div>
-            <div class="banner intro-slide intro-slide-2 bg-section "
-                 style="background: url('assets/images/demos/demo-4/slide/video-3.mp4'); background-size: cover">
+            <div class="banner intro-slide intro-slide-2 bg-section ">
+            <div style="position: fixed; top: 1;z-index: -1;">
+                <video id="video" autoplay muted loop  style="width:100%; height:100%">
+                <source src="assets/images/demos/demo-4/slide/Pasos.webm" type="video/mp4" />
+                </video>
+            </div>
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
                             <div class="banner-content">
-                                <h2 class="banner-title">
+                            <br><br><br><br>
+                                <h2 class="banner-title" style="color:white;">
                                     Contigo en cada paso...
                                 </h2>
-                                <p class="banner-info">
+                                <p class="banner-info" style="color:white;">
                                     Te ayudamos a caminar sin dolor, nuestra misión es contribuir a que más personas
                                     caminen sin dolor…
                                 </p>
@@ -328,7 +340,47 @@ loading overlay - end
                     <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
                 </div>
             </div>
-            <div class="banner intro-slide intro-slide-2 bg-section "
+            <div class="banner intro-slide intro-slide-2 bg-section ">
+            <div style="position: fixed; top: 1;z-index: -1;">
+                <video id="video" autoplay muted loop  style="width:100%; height:100%">
+                <source src="assets/images/demos/demo-4/slide/Altorendimiento.webm" type="video/mp4" />
+                </video>
+            </div>
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="banner-content">
+                                <h2 class="banner-title">
+                                    Se imparable…
+                                </h2>
+                                <p class="banner-info">
+                                    Se un atleta integral de alto rendimiento… lleva tu cuerpo a su máximo potencial,
+                                    corregir tu postura y acelera tu recuperación.
+                                </p>
+                                <div class="banner-actions">
+                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
+                                        <span>Agendar Una Cita</span>
+                                    </a>
+                                    <a href="how-it-works.html" class="btn">
+                                        <span>Leer mas</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="foreground-img">
+                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
+                </div>
+            </div>
+            <!--<div class="banner intro-slide intro-slide-2 bg-section "
                  style="background: url('assets/images/demos/demo-4/slide/'); background-size: cover">
                 <div class="container">
                     <div class="row d-flex align-items-center">
@@ -359,41 +411,9 @@ loading overlay - end
                 <div class="foreground-img">
                     <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
                 </div>
-            </div>
+            </div>-->
             <div class="banner intro-slide intro-slide-2 bg-section "
-                 style="background: url('assets/images/demos/demo-4/slide/'); background-size: cover">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
-                            <div class="banner-content">
-                                <h2 class="banner-title">
-                                    Por que soy imparable…
-                                </h2>
-                                <p class="banner-info">
-                                    Se un atleta integral de alto rendimiento… lleva tu cuerpo a su máximo potencial,
-                                    corregir tu postura y acelera tu recuperación.
-                                </p>
-                                <div class="banner-actions">
-                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                        <span>Agendar Una Cita</span>
-                                    </a>
-                                    <a href="how-it-works.html" class="btn">
-                                        <span>Leer mas</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="foreground-img">
-                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
-                </div>
-            </div>
-            <div class="banner intro-slide intro-slide-2 bg-section "
-                 style="background: url('assets/images/demos/demo-4/slide/'); background-size: cover">
+                 style="background: url('assets/images/demos/demo-4/slide/COVID.jpg'); background-size: cover">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
@@ -444,11 +464,11 @@ loading overlay - end
                             </p>
                             <div class="widget-hours">
                                 <span>Lunes — Viernes</span>
-                                <span class="time">9:00<sup>AM</sup> — 7:30<sup>PM</sup></span>
+                                <span class="time">9:30<sup>AM</sup> — 7:30<sup>PM</sup></span>
                             </div>
                             <div class="widget-hours">
                                 <span>Sábados</span>
-                                <span class="time">9:00<sup>AM</sup> — 1:30<sup>PM</sup></span>
+                                <span class="time">9:30<sup>AM</sup> — 1:30<sup>PM</sup></span>
                             </div>
                         </div>
                     </div>
@@ -747,16 +767,16 @@ loading overlay - end
                                         "Valeria Pineda"
                                     );
                 $array_photo_names = array(   
-                                        "David_Figueroa_Espinosa.JPG", 
-                                        "Luisa_Cal_y_Mayor.JPG",
-                                        "Magdalena_Barcenas.JPG",
-                                        "Amelia_Cervantes.JPG",
-                                        "Diana_Espinosa.JPG",
-                                        "Martha_Laura_Ramos.JPG",
-                                        "Mayra_Sanchez.JPG",
-                                        "Saul_Luengas_Ramos.JPG",
-                                        "Susana_Rosales.JPG",
-                                        "Valeria_Pineda.JPG"
+                                        "David_Figueroa_Espinosa.jpg", 
+                                        "Luisa_Cal_y_Mayor.jpg",
+                                        "Magdalena_Barcenas.jpg",
+                                        "Amelia_Cervantes.jpg",
+                                        "Diana_Espinosa.jpg",
+                                        "Martha_Laura_Ramos.jpg",
+                                        "Mayra_Sanchez.jpg",
+                                        "Saul_Luengas_Ramos.jpg",
+                                        "Susana_Rosales.jpg",
+                                        "Valeria_Pineda.jpg"
                                     );
                 $array_title = array(
                                         "Radiólogo y Operador en Piedica", 
@@ -823,7 +843,7 @@ loading overlay - end
 
                     <figure>
                         <a href="doctors-detailed.html">
-                            <img src="assets/images/doctors/dr-saul.jpg" class="w-100" alt="Doctor" width="370"
+                            <img src="assets/images/doctors/dr-saul2.jpg" class="w-100" alt="Doctor" width="370"
                                  height="407">
                             <div class="hover">
                                 <div class="circle">
@@ -875,7 +895,7 @@ loading overlay - end
                 <div class="col-lg-12 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1">
                     <div class="banner-actions d-flex justify-content-center">
                         <a href="doctores.html" class="btn btn-action btn-secondary-color">
-                            <span>Conoce a los doctores</span>
+                            <span>Conoce a los especialistas</span>
                         </a>
                     </div>
                 </div>
@@ -902,11 +922,12 @@ loading overlay - end
                                     <div class="banner-heading">
                                         <h2 class="banner-title">
                                             Nosotros brindamos tratamientos de calidad
-                                            Para todos… vive sin dolor...
+                                            Para todos…
                                         </h2>
-                                        <p class="banner-info">We provide primary care when you need it, get
-                                            personalized and
-                                            high quality healthcare by talking to top medical doctors.</p>
+                                        <p class="banner-info">vive sin dolor...<br>
+                                            #TuSaludEnEquilibrio
+
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="icon-boxes">
@@ -945,7 +966,7 @@ loading overlay - end
                                     </div>
                                 </div>
                                 <div class="banner-actions">
-                                    <a href="membership.html" class="btn btn-secondary-color btn-md">
+                                    <a href="blogs/instalaciones.html" class="btn btn-secondary-color btn-md">
                                         <span>Conoce más</span>
                                     </a>
                                 </div>
@@ -973,7 +994,7 @@ loading overlay - end
             <div class="blog-slider row d-flex justify-content-center">
                 <div class="post-box col-lg-4 col-md-8 col-sm-8 col-10">
                     <figure>
-                        <a href="blog-detailed.html">
+                        <a href="blogs/dolor_pies.html">
                             <img src="assets/images/blog/ejemplo.jpg" alt="Blog" width="370" height="257">
                             <div class="hover">
                                 <div class="circle">
@@ -983,9 +1004,9 @@ loading overlay - end
                         </a>
                     </figure>
                     <div class="box-content">
-                        <h4 class="box-title"><a href="blog-detailed.html">Me duelen los pies constantemente después de caminar…¿Es normal? </a></h4>
+                        <h4 class="box-title"><a href="blogs/dolor_pies.html">Me duelen los pies constantemente después de caminar…¿Es normal? </a></h4>
                         <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a
-                                href="blog-detailed.html">2 Comments</a></p>
+                                href="blogs/dolor_pies.html">2 Comments</a></p>
                         <p class="post-desc">
                             El dolor es una señal que manda nuestro cuerpo, emitida por el sistema nervioso y se percibe como una sensación desagradable. ...
                         </p>
@@ -993,8 +1014,8 @@ loading overlay - end
                 </div>
                 <div class="post-box col-lg-4 col-md-8 col-sm-8 col-10">
                     <figure>
-                        <a href="blog-detailed.html">
-                            <img src="assets/images/blog/blog1-2.jpg" alt="Blog" width="370" height="257">
+                        <a href="blogs/instalaciones.html">
+                            <img src="assets/images/blog/Instalaciones2.jpg" alt="Blog" width="370" height="257">
                             <div class="hover">
                                 <div class="circle">
                                     <i class="fas fa-link"></i>
@@ -1003,20 +1024,18 @@ loading overlay - end
                         </a>
                     </figure>
                     <div class="box-content">
-                        <h4 class="box-title"><a href="blog-detailed.html">How long can corona virus live on
-                            surfaces?</a></h4>
+                        <h4 class="box-title"><a href="blogs/instalaciones.html">Instalaciones</a></h4>
                         <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a
-                                href="blog-detailed.html">2 Comments</a></p>
+                                href="blogs/instalaciones.html">2 Comments</a></p>
                         <p class="post-desc">
-                            Fowl don't sea fill of divided by create female don't man image
-                            female wherein night ...
+                            Normalizar el dolor, no está bien. Nosotros te ayudamos a recuperar el equilibrio en tu cuerpo...
                         </p>
                     </div>
                 </div>
                 <div class="post-box col-lg-4 col-md-8 col-sm-8 col-10">
                     <figure>
-                        <a href="blog-detailed.html">
-                            <img src="assets/images/blog/blog1-3.jpg" alt="Blog" width="370" height="257">
+                        <a href="blogs/dolor_espalda.html">
+                            <img src="assets/images/blog/dolor_espalda.jpg" alt="Blog" width="370" height="257">
                             <div class="hover">
                                 <div class="circle">
                                     <i class="fas fa-link"></i>
@@ -1025,13 +1044,12 @@ loading overlay - end
                         </a>
                     </figure>
                     <div class="box-content">
-                        <h4 class="box-title"><a href="blog-detailed.html">The uninsured and working class people.</a>
+                        <h4 class="box-title"><a href="blogs/dolor_espalda.html">Estoy cansado de tener dolor en mi espalda baja</a>
                         </h4>
                         <p class="post-date"><a href="#">Dec 13, 2020</a><span class="text-divider">|</span><a
-                                href="blog-detailed.html">2 Comments</a></p>
+                                href="blogs/dolor_espalda.html">2 Comments</a></p>
                         <p class="post-desc">
-                            Fowl don't sea fill of divided by create female don't man image
-                            female wherein night ...
+                        El dolor en espalda baja se conoce como lumbalgia, la cual puede ser ocasionada por diversos factores como: mantener una mala postura por tiempo prolongado, no realizar actividad física...
                         </p>
                     </div>
                 </div>
@@ -1045,82 +1063,32 @@ loading overlay - end
     footer - start
     ------------------------------------------------>
     <footer class="footer bg-primary-color">
-        <div class="container">
-            <div class="footer-top">
-                <div class="row d-flex align-items-center justify-content-center">
-                    <div class="col-lg-6 col-sm-7 col-10">
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo-sm.png" alt="Caremed Logo" width="185" height="48">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-sm-7 col-10 d-lg-flex justify-content-lg-end">
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-                            <a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
-                            <a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-middle">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-3 col-sm-7 col-10">
-                            <div class="info-box">
-                                <h6 class="info-title">Company</h6>
-                                <ul class="info-list">
-                                    <li><a href="#" class="info-link">About</a></li>
-                                    <li><a href="#" class="info-link">Our Doctors</a></li>
-                                    <li><a href="#" class="info-link">Latest Blog</a></li>
-                                    <li><a href="#" class="info-link">Careers</a></li>
-                                    <li><a href="#" class="info-link">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-7 col-10">
-                            <div class="info-box">
-                                <h6 class="info-title">Support</h6>
-                                <ul class="info-list">
-                                    <li><a href="#" class="info-link">Reviews</a></li>
-                                    <li><a href="#" class="info-link">FAQs</a></li>
-                                    <li><a href="#" class="info-link">Help Center</a></li>
-                                    <li><a href="#" class="info-link">Doctors</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-7 col-10">
-                            <div class="info-box">
-                                <h6 class="info-title">Legal</h6>
-                                <ul class="info-list">
-                                    <li><a href="#" class="info-link">Term of use</a></li>
-                                    <li><a href="#" class="info-link">Code of Conduct</a></li>
-                                    <li><a href="#" class="info-link">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-7 col-10">
-                            <div class="info-box">
-                                <h6 class="info-title">Company</h6>
-                                <form class="input-group input-footer">
-                                    <input type="email" class="form-control" placeholder="Email address" required>
-                                    <button type="submit" class="form-action"><i class="fas fa-check-circle"></i>
-                                    </button>
-                                </form>
-                                <p>Unsubscribe anytime.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-12 col-sm-7 col-10">
-                        <p>© GFXPARTNER</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+			<div class="container">
+				<div class="footer-top">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-lg-6 col-sm-7 col-10">
+							<a href="index.php" class="logo">
+								<img src="assets/images/logo-sm.png" alt="Caremed Logo" width="185" height="48">
+							</a>
+						</div>
+						<div class="col-lg-6 col-sm-7 col-10 d-lg-flex justify-content-lg-end">
+							<div class="social-links">
+								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12 col-sm-7 col-10">
+							<p>© GFXPARTNER</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
     <!------------------------------------------------
     footer - end
     ------------------------------------------------>
@@ -1145,7 +1113,7 @@ loading overlay - end
                     <a href="#" class="sf-with-ul">Home Pages</a>
 
                     <ul>
-                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index.php">Home 1</a></li>
                         <li><a href="index-2.html">Home 2</a></li>
                         <li><a href="index-3.html">Home 3</a></li>
                         <li><a href="index-4.html">Home 4</a></li>
@@ -1215,7 +1183,7 @@ loading overlay - end
 </div><!-- End .mobile-menu-container -->
 
 
-<form class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 18%;left:74%" id="appointment">
+<form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 16%;left:74%" id="appointment">
     <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
         <button class="close-button" aria-label="Close alert" type="button" data-close>
             <i class="fa fa-times" aria-hidden="true"></i>
@@ -1224,15 +1192,16 @@ loading overlay - end
     <h4 class="sub-title ls-n-5 text-center">Agenda Una Cita</h4>
     <div class="input-group input-light">
         <h6 class="input-title">Nombre</h6>
-        <input type="text" class="form-control" placeholder="Nombre completo">
+        <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
     </div>
     <div class="input-group input-light">
         <h6 class="input-title">Teléfono</h6>
-        <input type="email" class="form-control" placeholder="442-222-3333">
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="442-222-3333" required>
+        <input type="hidden" id="page" name="page" value="../index.php">
     </div>
     <div class="input-group input-light">
         <h6 class="input-title">Email</h6>
-        <input type="tel" class="form-control" placeholder="example@gmail.com">
+        <input id="email" name="email" type="tel" class="form-control" placeholder="contacto@acrimexico.com" required>
     </div>
     <!--<div class="input-group input-light">
         <h6 class="input-title">Department</h6>
@@ -1246,12 +1215,12 @@ loading overlay - end
     </div>-->
     <div class="input-group input-light input-calendar-light">
         <h6 class="input-title">Fecha</h6>
-        <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020">
+        <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020" id="date" name="date">
         <i class="far fa-calendar-alt"></i>
     </div>
     <div class="input-group input-light">
         <h6 class="input-title">Comentarios</h6>
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control" id="message" name="message"></textarea>
     </div>
     <!--<div class="input-group input-light">
         <h6 class="input-title">Time</h6>
@@ -1271,15 +1240,51 @@ loading overlay - end
     <button type="submit" class="btn btn-secondary-color btn-form">
         <span>Agenda Una Cita</span>
     </button>
+    <h6 class="input-title" id="resultMailSucess" style="display: none;color:green;font-style: italic">¡Gracias! Su petición fue enviada.</h6>
+    <h6 class="input-title" id="resultMailFail" style="display: none;color:red;font-style: italic">Hubo un problema al enviar petición.</h6>
 </form>
 
 <!-- Plugins JS File -->
 <script>
+    var mailSent = findGetParameter("mailSend");
+    console.log(mailSent);
+    if(mailSent=="success") {
+        document.getElementById('appointment').style.display = 'block';
+        document.getElementById('resultMailSucess').style.display = 'block';
+    }
+    else if(mailSent=="failure") {
+        document.getElementById('appointment').style.display = 'block';
+        document.getElementById('resultMailFail').style.display = 'block';
+    }
+
+    function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    function findGetParameter(parameterName) {
+        var result = null,
+            tmp = [];
+        location.search
+            .substr(1)
+            .split("&")
+            .forEach(function (item) {
+            tmp = item.split("=");
+            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+            });
+        return result;
+    }
+
     function showApointer() {
+        topFunction();
         if (document.getElementById('appointment').style.display == 'none') {
             document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailSucess').style.display = 'none';
+            document.getElementById('resultMailFail').style.display = 'none';
         } else {
             document.getElementById('appointment').style.display = 'none';
+            document.getElementById('resultMailSucess').style.display = 'none';
+            document.getElementById('resultMailFail').style.display = 'none';
         }
 
     }
