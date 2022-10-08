@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-	<title>Caremed - Blog Masonry</title>
+	<title>Caremed - Blog Detailed</title>
 
 	<meta name="keywords" content="Caremed HTML5 Responsive Template Medicine COVID-19 Corona Hospital" />
 	<meta name="description" content="Caremed - Hospital HTML5 Responsive Template">
@@ -12,8 +12,7 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 	
-	
-	
+		
 	<!-- Plugins CSS File -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
@@ -50,13 +49,7 @@
             </div>
             -->
             <br>
-            <!--<div class="" id="whatsapp">-->
-            <div class="" id="book" style="margin-right: -8px">
-                <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20una%20cita%20de%20la%20clinica%20Acri%20México"
-                   target="_blank">
-                    <i class="fab fa-whatsapp fa-3x" style="color:green"></i>
-                </a>
-            </div>
+
         </div>
         <header class="header">
             <div class="header-top">
@@ -97,7 +90,7 @@
     
                             </li>
                             <li>
-                                <a href="blogs/instalaciones.html" class="sf-with-ul">Quienes Somos<!--<i class="fas fa-caret-down">--></i></a>
+                                <a href="instalaciones.html" class="sf-with-ul">Quienes Somos<!--<i class="fas fa-caret-down">--></i></a>
                                 <!--<ul class="sub-menu">
                                     <li><a href="about.html"><i class="fas fa-angle-right"></i>Acerca de nosotros</a></li>
                                     <li class="li-with-arrow">
@@ -117,24 +110,6 @@
                             </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
-                    <div class="header-search">
-                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                        <form action="#" class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                                   required="">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
-                    <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
-                        <span style="color:white">Agendar Una Cita</span>
-                    </a>
-                    <!----
-                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
-                    <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-                        <span>Sign in</span>
-                    </a>-->
-                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
                 </div>
             </div>
         </header>
@@ -145,27 +120,72 @@
             <!------------------------------------------------
 		    page header - start
 		    ------------------------------------------------>
-            <div class="page-header bg-more-light">
-                <div class="container">
-                    <h2 class="page-title">Tienda </h2>
-                    <nav aria-label="breadcrumb" class="breadcrumb-nav">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active"><a href="index.php">Paginas</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Tienda</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+
             <!------------------------------------------------
 		    page header - end
 		    ------------------------------------------------>
             <!------------------------------------------------
 		    content - start
 		    ------------------------------------------------>
-            <!--<div class="container blog-masonry-section padding-small"></div>-->
-                <iframe src="https://acrimexico.mercadoshops.com.mx/" height="2420" width="100%" ></iframe>
-            <!--</main>-->
+            <br><br><br><br>
+            <div class="container blog-detailed">
+                <form method="post" action="php/contact.php" class="header-search-wrapper" id="appointment">
+
+                    <h4 class="sub-title ls-n-5 text-center">Agenda Una Cita</h4>
+                    <h6 class="input-title" id="resultMailSucess" style="display: none;color:green;font-style: italic">¡Gracias! Su petición fue enviada.</h6>
+                    <h6 class="input-title" id="resultMailFail" style="display: none;color:red;font-style: italic">Hubo un problema al enviar petición.</h6>
+                    <div class="input-group input-light">
+                        <h6 class="input-title">Nombre</h6>
+                        <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
+                    </div>
+                    <div class="input-group input-light">
+                        <h6 class="input-title">Teléfono</h6>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="442-222-3333" required>
+                        <input type="hidden" id="page" name="page" value="../appointment.html">
+                    </div>
+                    <div class="input-group input-light">
+                        <h6 class="input-title">Email</h6>
+                        <input id="email" name="email" type="email" class="form-control" placeholder="contacto@acrimexico.com" required>
+                    </div>
+                    <!--<div class="input-group input-light">
+                        <h6 class="input-title">Department</h6>
+                        <div class="form-control select-control">Please select<i class="far fa-angle-down"></i></div>
+                        <ul class="option-menu" id="option_menu_1">
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Most Recent</span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Popular</span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Oldest</span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>All times</span></li>
+                        </ul>
+                    </div>-->
+                    <div class="input-group input-light input-calendar-light">
+                        <h6 class="input-title">Fecha</h6>
+                        <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020" id="date" name="date" readonly>
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="input-group input-light">
+                        <h6 class="input-title">Comentarios</h6>
+                        <textarea class="form-control text-area h-100" id="message" name="message"></textarea>
+                    </div>
+                    <!--<div class="input-group input-light">
+                        <h6 class="input-title">Time</h6>
+                        <div id="select_4" class="form-control select-control opacity-1">
+                            <div class="check-circle"><i class="fas fa-check"></i></div>
+                            <div class="primary-color">4:00<sup>PM</sup></div>
+                            Available
+                            <i class="far fa-angle-down"></i>
+                        </div>
+                        <ul class="option-menu" id="option_menu_4">
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>5.00<sup>PM</sup></span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>6.00<sup>PM</sup></span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>7.00<sup>PM</sup></span></li>
+                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>8.00<sup>PM</sup></span></li>
+                        </ul>
+                    </div>-->
+                    <button type="submit" class="btn btn-secondary-color btn-form">
+                        <span>Agenda Una Cita</span>
+                    </button>
+                </form>
+            </div>
             <!------------------------------------------------
 		    content - end
 		    ------------------------------------------------>
@@ -173,33 +193,7 @@
         <!------------------------------------------------
 		footer - start
 		------------------------------------------------>
-		<footer class="footer bg-primary-color">
-			<div class="container">
-				<div class="footer-top">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-lg-6 col-sm-7 col-10">
-							<a href="index.php" class="logo">
-								<img src="assets/images/logo-sm.png" alt="Caremed Logo" width="185" height="48">
-							</a>
-						</div>
-						<div class="col-lg-6 col-sm-7 col-10 d-lg-flex justify-content-lg-end">
-							<div class="social-links">
-								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
-								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<div class="row d-flex justify-content-center">
-						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+
 		<!------------------------------------------------
 		footer - end
 		------------------------------------------------>
@@ -254,6 +248,80 @@
     
     
     <!-- Plugins JS File -->
+    <script>
+        var mailSent = findGetParameter("mailSend");
+        console.log(mailSent);
+        if(mailSent=="success") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailSucess').style.display = 'block';
+        }
+        else if(mailSent=="failure") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailFail').style.display = 'block';
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+
+        function showApointer() {
+            topFunction();
+            if (document.getElementById('appointment').style.display == 'none') {
+                document.getElementById('appointment').style.display = 'block';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            } else {
+                document.getElementById('appointment').style.display = 'none';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            }
+
+        }
+
+        function hideApointer() {
+            document.getElementById('appointment').style.display = 'none';
+
+
+        }
+
+        //Get the button
+        var book = document.getElementById("book");
+        //var whatsapp = document.getElementById("whatsapp");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                book.style.opacity = "1";
+                //whatsapp.style.opacity = "1";
+            } else {
+                book.style.opacity = "0";
+                //whatsapp.style.opacity = "0";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>

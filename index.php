@@ -147,7 +147,7 @@ loading overlay - end
                 <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
                     <span>Sign in</span>
                 </a>-->
-                <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
             </div>
         </div>
     </header>
@@ -552,7 +552,7 @@ loading overlay - end
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Radiografía
+                            <a href="departments-detailed.html"><h4 class="box-title">Radiología
                             </h4></a>
                             <p class="box-desc">Como parte de nuestro proceso integral, contamos con tecnología de rayos
                                 X, que nos permiten diagnosticar lesiones  
@@ -1110,61 +1110,19 @@ loading overlay - end
         <nav class="mobile-nav mt-5">
             <ul class="mobile-menu">
                 <li>
-                    <a href="#" class="sf-with-ul">Home Pages</a>
-
-                    <ul>
-                        <li><a href="index.php">Home 1</a></li>
-                        <li><a href="index-2.html">Home 2</a></li>
-                        <li><a href="index-3.html">Home 3</a></li>
-                        <li><a href="index-4.html">Home 4</a></li>
-                        <li><a href="index-5.html">Home 5</a></li>
-                        <li><a href="index-6.html">Home 6</a></li>
-                        <li><a href="index-7.html">Home 7</a></li>
-                    </ul>
+                    <a href="index.php" class="sf-with-ul">Inicio</a>
                 </li>
                 <li>
-                    <a href="#" class="sf-with-ul">Standard Pages</a>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="doctores.html">Our Doctors</a></li>
-                        <li><a href="doctors-detailed.html">Doctor (Detailed)</a></li>
-                        <li><a href="departments-1.html">Departments (Style 01)</a></li>
-                        <li><a href="departments-2.html">Departments (Style 02)</a></li>
-                        <li><a href="departments-detailed.html">Departments (Detailed)</a></li>
-                        <li><a href="treatments.html">Treatments</a></li>
-                        <li><a href="how-it-works.html">How it Works</a></li>
-                        <li><a href="help.html">Help</a></li>
-                        <li><a href="help-questions.html">Help Questions</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
+                    <a href="blogs/instalaciones.html" class="sf-with-ul">Quienes Somos</a>
                 </li>
                 <li>
-                    <a href="#" class="sf-with-ul">Blog Pages</a>
-                    <ul>
-                        <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog Masonry (Right Sidebar)</a></li>
-                        <li><a href="blog-left-sidebar.html">Blog Masonry (Left Sidebar)</a></li>
-                        <li><a href="blog-detailed.html">Blog Detailed</a></li>
-                        <li><a href="blog-detailed-sidebar.html">Blog Detailed Sidebar</a></li>
-                    </ul>
+                    <a href="blog-masonry.html" class="sf-with-ul">Blog</a>
                 </li>
                 <li>
-                    <a href="#" class="sf-with-ul">Appointments</a>
-                    <ul>
-                        <li><a href="appointment-step1.html">Appointment (Step01)</a></li>
-                        <li><a href="appointment-step2.html">Appointment (Step02)</a></li>
-                        <li><a href="appointment-step3.html">Appointment (Step03)</a></li>
-                        <li><a href="appointment-step4.html">Appointment (Step04)</a></li>
-                    </ul>
+                    <a href="treatments.html" class="sf-with-ul">Tratamientos</a>
                 </li>
                 <li>
-                    <a href="#" class="sf-with-ul">Login Pages</a>
-                    <ul>
-                        <li><a href="login.html">Signin</a></li>
-                        <li><a href="signup.html">Signup</a></li>
-                    </ul>
+                    <a href="https://acrimexico.mercadoshops.com.mx/" class="sf-with-ul">Tienda</a>
                 </li>
             </ul>
         </nav><!-- End .mobile-nav -->
@@ -1176,14 +1134,15 @@ loading overlay - end
         </div><!-- End .social-icons -->
 
         <div class="mobile-actions">
-            <a href="appointment-step1.html" class="btn btn-secondary-color btn-xs">Agenda Una Cita</a>
-            <a href="login.html" class="btn btn-xs">Signin</a>
+            <a href="appointment.html" class="btn btn-secondary-color btn-xs">
+                                            <span style="color:white">Agendar Una Cita</span>
+            </a>
         </div><!-- End .mobile-actions -->
     </div><!-- End .mobile-menu-wrapper -->
 </div><!-- End .mobile-menu-container -->
 
 
-<form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 16%;left:74%" id="appointment">
+<form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 16%; right:4%" id="appointment">
     <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
         <button class="close-button" aria-label="Close alert" type="button" data-close>
             <i class="fa fa-times" aria-hidden="true"></i>
