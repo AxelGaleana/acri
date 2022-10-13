@@ -501,7 +501,7 @@ loading overlay - end
         <div class="container department-preview-section">
             <div class="row">
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-12 offset-lg-0">
-                    <h2 class="ls-n-20 text-center section-heading">Brindamos atención de calidad para todos las etapas
+                    <h2 class="ls-n-20 text-center section-heading">Brindamos atención de calidad para todas las etapas
                         de vida y estilos de vida. .</h2>
                 </div>
             </div>
@@ -758,7 +758,6 @@ loading overlay - end
                                         "David Figueroa Espinosa", 
                                         "Luisa Cal y Mayor",
                                         "Magdalena Bárcenas R.",
-                                        "Amelia Cervantes",
                                         "Diana Espinosa",
                                         "Martha Laura Ramos",
                                         "Mayra Sánchez",
@@ -770,7 +769,6 @@ loading overlay - end
                                         "David_Figueroa_Espinosa.jpg", 
                                         "Luisa_Cal_y_Mayor.jpg",
                                         "Magdalena_Barcenas.jpg",
-                                        "Amelia_Cervantes.jpg",
                                         "Diana_Espinosa.jpg",
                                         "Martha_Laura_Ramos.jpg",
                                         "Mayra_Sanchez.jpg",
@@ -782,7 +780,6 @@ loading overlay - end
                                         "Radiólogo y Operador en Piedica", 
                                         "Terapeuta en Rehabilitación Acuática",
                                         "Administrativo Contable",
-                                        "LTF Terapeuta Física",
                                         "LTF Asistente Médico",
                                         "Gerente Administrativo",
                                         "LTF Terapeuta Física",
