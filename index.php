@@ -988,7 +988,7 @@ loading overlay - end
         <div class="container blog-preview-section">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12 col-md-8 col-sm-8 col-10">
-                    <h2 class="ls-n-20 text-center section-heading">Read from latest blog posts.</h2>
+                    <h2 class="ls-n-20 text-center section-heading">Lee nuestros últimos artículos.</h2>
                 </div>
             </div>
             <div class="blog-slider row d-flex justify-content-center">
