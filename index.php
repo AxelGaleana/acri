@@ -508,57 +508,57 @@ loading overlay - end
             <div class="row">
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/foot-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Piédica</h4></a>
+                            <a href="blogs/instalaciones.html"><h4 class="box-title">Piédica</h4></a>
                             <p class="box-desc">Nuestra tecnología nos permite analizar el ciclo de marcha de nuestros
                                 pacientes, detectar y corregir el mal funcionamiento del pie, corrigiendo la pisada por
                                 medio de plantillas ortopédicas personalizadas
                             </p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="blogs/instalaciones.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/hand-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Hidroterapia</h4></a>
+                            <a href="blogs/instalaciones.html"><h4 class="box-title">Hidroterapia</h4></a>
                             <p class="box-desc">Terapia física de rehabilitación integral para diversas afecciones de
                                 salud, desde casos de artritis severa hasta terapias post quirúrgicas de rodilla o
                                 cadera.
                                 .</p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="blogs/instalaciones.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/xray-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Radiología
+                            <a href="blogs/instalaciones.html"><h4 class="box-title">Radiología
                             </h4></a>
                             <p class="box-desc">Como parte de nuestro proceso integral, contamos con tecnología de rayos
                                 X, que nos permiten diagnosticar lesiones  
                             </p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="blogs/instalaciones.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
@@ -568,13 +568,13 @@ loading overlay - end
             <div class="row">
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/quiro-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Quiropráctica</h4></a>
+                            <a href="blogs/instalaciones.html"><h4 class="box-title">Quiropráctica</h4></a>
                             <p class="box-desc">La quiropráctica es una profesión que se encarga de diagnosticar, tratar
                                 y prevenir alteraciones del sistema músculo-esquelético, y de los desórdenes que puedan
                                 provocar en la función del sistema nervioso y la salud. Pone especial énfasis en la
@@ -583,44 +583,44 @@ loading overlay - end
                                 específicos.
                             </p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="blogs/instalaciones.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/nutri-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Nutrición Especializada</h4></a>
-                            <p class="box-desc">Metagenics y Endobalanz CBD
+                            <a href="shop.html"><h4 class="box-title">Nutrición Especializada</h4></a>
+                            <p class="box-desc">Complementa tu alimentación con las proteinas, carbohidratos, grasas, vitaminas y minerales claves para ayudar a mantener tu cuerpo en óptimas condiciones. Conoce las grandes marcas que distribuimos: <b>Metagenics y Endobalanz CBD</b>
                                 .</p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="shop.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
                     <div class="icon-box hover-border text-center">
-                        <a href="departments-detailed.html">
+                        <a href="blogs/instalaciones.html">
                             <figure>
                                 <img src="assets/images/icons/fistio-icon.png" alt="foot-icon">
                             </figure>
                         </a>
                         <div class="icon-box-content">
-                            <a href="departments-detailed.html"><h4 class="box-title">Fisioterapia</h4></a>
+                            <a href="blogs/instalaciones.html"><h4 class="box-title">Fisioterapia</h4></a>
                             <p class="box-desc">La rehabilitación física es la disciplina que se encarga de sanar y
                                 recuperar al máximo, todas las capacidades motrices de un individuo que ha sido afectado
                                 por una lesión o enfermedad. Todo esto con el objetivo de que éste pueda reintegrarse a
                                 sus actividades rutinarias y pueda ser autónomo.
                             </p>
                             <div class="btn-link">
-                                <a href="departments-detailed.html">Leer mas</a><i class="far fa-caret-right"></i>
+                                <a href="blogs/instalaciones.html">Leer mas</a><i class="far fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
