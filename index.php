@@ -55,7 +55,7 @@ loading overlay - end
     <!------------------------------------------------
     navigation - start
     ------------------------------------------------>
-    <div class="fixed-bottom text-right mr-5 mb-12">
+    <div class="fixed-bottom text-right mr-5 mb-12" style="height:100px;width:70px;">
         <!--
         <div class="" id="book" style="margin-right: -8px">
             <button onclick="showApointer()" style="border: transparent;background: transparent;color: #ff594d;cursor: pointer"><img
@@ -799,8 +799,8 @@ loading overlay - end
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions."
                 );
-                $employee1 = rand(0, 9);
-                $employee2 = rand(0, 9);
+                $employee1 = rand(0, 8);
+                $employee2 = rand(0, 8);
                 while ($employee2 == $employee1)
                 {
                     $employee2 = rand(0, 9);
