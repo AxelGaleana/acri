@@ -35,6 +35,67 @@
             transition: 500ms ease-in-out;
         }
 
+        @media (max-width: 991px) {
+            .mobile-hide {
+                display: none;
+            }
+            .mobile-show {
+                display: block;
+            }
+
+            .carpiano_background-image-show {
+                background: url('assets/images/demos/demo-4/slide/fondo-tunelcarpiano.jpg'); background-size: cover;
+            }
+            .carpiano_font {
+                color: #0A568A;
+            }
+            .pasos_font {
+                color: black;
+            }
+            .pasos_background-image-show {
+                background: url('assets/images/demos/demo-4/slide/pasos.jpg'); background-size: cover;
+            }
+            .abuelos_background-image-show {
+                background: url('assets/images/demos/demo-4/slide/abuelos.jpg'); background-size: cover;
+            }
+            .atleta_background-image-show {
+                background: url('assets/images/demos/demo-4/slide/Athlete.jpg'); background-size: cover;
+            }
+            .show_appointment_button_link {
+                display: inline-block;
+            }
+            .show_appointment_button_form {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-hide {
+                display: block;
+            }
+            .mobile-show {
+                display: none;
+            }
+            .carpiano_background-image-show {
+
+            }
+            .carpiano_font {
+                color:white;
+            }
+            .pasos_font {
+                color:white;
+            }
+            .abuelos_background-image-show {
+                background: url('assets/images/demos/demo-4/slide/bg-2.jpg'); background-size: cover;
+            }
+            .show_appointment_button_form {
+                display: inline-block;
+            }
+            .show_appointment_button_link {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -130,23 +191,9 @@ loading overlay - end
                         </li>
                     </ul><!-- End .menu -->
                 </nav><!-- End .main-nav -->
-                <div class="header-search">
-                    <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                    <form action="#" class="header-search-wrapper">
-                        <label for="q" class="sr-only">Search</label>
-                        <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                               required="">
-                        <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
                 <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
                     <span style="color:white">Agendar Una Cita</span>
                 </a>
-                <!----
-                <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
-                <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-                    <span>Sign in</span>
-                </a>-->
                 <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
             </div>
         </div>
@@ -174,108 +221,71 @@ loading overlay - end
                 background image is added through css and can be modified in the _sections.scss file
                 the image is added to the .bg-section-19 class.
             -->
-            <div class="banner intro-slide intro-slide-2 bg-section">
-            <div style="position: fixed; top: 1;z-index: -1;">
-                <video id="video" autoplay muted loop  style="width:100%; height:100%">
-                <source src="assets/images/demos/demo-4/slide/tunel_carpiano.webm" type="video/mp4" />
-                </video>
-            </div>
-                    <div class="container">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <div class="banner-content">
-                                    <h2 class="banner-title" style="color:white;">
-                                        Que nada detenga tu potencial…
-                                    </h2>
-                                    <p class="banner-info" style="color:white;">
-                                        El Síndrome del túnel carpiano, el dolor de espalda baja, y el estrés son algunos de
-                                        los principales problemas de salud más frecuentes en la vida laboral.
-                                    </p>
-                                    <div class="banner-actions">
-                                        <a onclick="showApointer()" class="btn btn-secondary-color">
-                                            <span style="color:white">Agendar Una Cita</span>
-                                        </a>
-                                        <!--
-                                        <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                            <span>Agendar Una Cita</span>
-                                        </a>-->
-                                        <a href="how-it-works.html" class="btn">
-                                            <span>Leer mas</span>
-                                        </a>
-                                    </div>
+            <div class="banner intro-slide intro-slide-2 bg-section carpiano_background-image-show">
+                <div class="mobile-hide" style="position: fixed; top: 1;z-index: -1;">
+                    <video id="video" playsInline autoPlay muted loop  style="width:100%; height:100%">
+                    <!--<source src="assets/images/demos/demo-4/slide/tunel_carpiano.mov" type="video/mp4" />-->
+                    <source src="assets/images/demos/demo-4/slide/tunel_carpiano.webm" type="video/webm" />
+                    <source src="assets/images/demos/demo-4/slide/tunel_carpiano.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <!--<div class="mobile-show" style="position: fixed; top: 1;z-index: -1;">
+                    <img src="assets/images/demos/demo-4/slide/fondo-tunelcarpiano.jpg" alt="Banner-slide">
+                </div>-->
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="banner-content">
+                                <h2 class="banner-title carpiano_font">
+                                    Que nada detenga tu potencial…
+                                </h2>
+                                <p class="banner-info carpiano_font">
+                                    El Síndrome del túnel carpiano, el dolor de espalda baja, y el estrés son algunos de
+                                    los principales problemas de salud más frecuentes en la vida laboral.
+                                </p>
+                                <div class="banner-actions">
+                                    <a onclick="showApointer()" class="show_appointment_button_form btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <a href="appointment.html" class="show_appointment_button_link btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <!--
+                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
+                                        <span>Agendar Una Cita</span>
+                                    </a>-->
+                                    <a href="blogs/cansancio_computadora.html" class="btn">
+                                        <span>Leer mas</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
-
-                                <!--
-                                                                <form class="book-form book-form-4 w-100">
-                                                                    <h4 class="sub-title ls-n-20 text-center">Agenda Una Cita</h4>
-                                                                    <div class="input-group input-light">
-                                                                        <h6 class="input-title">Nombre</h6>
-                                                                        <input type="text" class="form-control" placeholder="Nombre completo">
-                                                                    </div>
-                                                                    <div class="input-group input-light">
-                                                                        <h6 class="input-title">Email</h6>
-                                                                        <input type="email" class="form-control" placeholder="contacto@acrimexico.com">
-                                                                    </div>
-                                                                    <div class="input-group input-light">
-                                                                        <h6 class="input-title">Department</h6>
-                                                                        <div class="form-control select-control">Please select<i class="far fa-angle-down"></i></div>
-                                                                        <ul class="option-menu" id="option_menu_1">
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Most Recent</span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Popular</span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Oldest</span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>All times</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="input-group input-light input-calendar-light">
-                                                                        <h6 class="input-title">Date</h6>
-                                                                        <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020">
-                                                                        <i class="far fa-calendar-alt"></i>
-                                                                    </div>
-                                                                    <div class="input-group input-light">
-                                                                        <h6 class="input-title">Time</h6>
-                                                                        <div id="select_4" class="form-control select-control opacity-1">
-                                                                            <div class="check-circle"><i class="fas fa-check"></i></div>
-                                                                            <div class="primary-color">4:00<sup>PM</sup></div> Available
-                                                                            <i class="far fa-angle-down"></i>
-                                                                        </div>
-                                                                        <ul class="option-menu" id="option_menu_4">
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>5.00<sup>PM</sup></span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>6.00<sup>PM</sup></span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>7.00<sup>PM</sup></span></li>
-                                                                            <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>8.00<sup>PM</sup></span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <button type="submit" class="btn btn-secondary-color btn-form">
-                                                                        <span>Agenda Una Cita</span>
-                                                                    </button>
-                                                                </form>
-                                                                -->
-                                                                <!--<iframe id="ytplayer" type="text/html" width="135%" height="200%" src="assets/images/demos/demo-4/slide/productionID_4520181-converted.mp4?playlist=w9bcNGcAK38&amp;loop=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;disablekb=1&amp;modestbranding=1" frameborder="0" allowfullscreen="">
-
-                                                                </iframe>-->
-                                                                <!--<video autoplay muted loop width="500" height="633">
-                                                                    <source src="assets/images/demos/demo-4/slide/productionID_4520181-converted.mp4" type="video/mp4" />
-                                                                </video>-->
-
-                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
                         </div>
                     </div>
+                </div>
+                <div class="foreground-img">
+                    <img src="assets/images/demos/demo-4/slide/slide-1-fore.png" alt="Banner-slide">
+                </div>
             </div>
             <!--
                 background image is added through css and can be modified in the _sections.scss file
                 the image is added to the .bg-section-20 class.
             -->
-            <div class="banner intro-slide intro-slide-2 bg-section "
-                 style="background: url('assets/images/demos/demo-4/slide/bg-2.jpg'); background-size: cover">
+            <div class="banner intro-slide intro-slide-2 bg-section abuelos_background-image-show">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                            <br>
+                            <br>
                             <div class="banner-content">
                                 <h2 class="banner-title">
                                     Que nada te detenga…
@@ -285,10 +295,13 @@ loading overlay - end
                                     vida.
                                 </p>
                                 <div class="banner-actions">
-                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                        <span>Agendar Una Cita</span>
+                                    <a onclick="showApointer()" class="show_appointment_button_form btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
                                     </a>
-                                    <a href="how-it-works.html" class="btn">
+                                    <a href="appointment.html" class="show_appointment_button_link btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <a href="blogs/equilibrio.html" class="btn">
                                         <span>Leer mas</span>
                                     </a>
                                 </div>
@@ -300,52 +313,16 @@ loading overlay - end
                     </div>
                 </div>
                 <div class="foreground-img">
-                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
+                    <img src="assets/images/demos/demo-4/slide/abue.png" alt="Banner-slide">
                 </div>
             </div>
-            <div class="banner intro-slide intro-slide-2 bg-section ">
-            <div style="position: fixed; top: 1;z-index: -1;">
-                <video id="video" autoplay muted loop  style="width:100%; height:100%">
-                <source src="assets/images/demos/demo-4/slide/Pasos.webm" type="video/mp4" />
-                </video>
-            </div>
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
-                            <div class="banner-content">
-                            <br><br><br><br>
-                                <h2 class="banner-title" style="color:white;">
-                                    Contigo en cada paso...
-                                </h2>
-                                <p class="banner-info" style="color:white;">
-                                    Te ayudamos a caminar sin dolor, nuestra misión es contribuir a que más personas
-                                    caminen sin dolor…
-                                </p>
-                                <div class="banner-actions">
-                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                        <span>Agendar Una Cita</span>
-                                    </a>
-                                    <a href="how-it-works.html" class="btn">
-                                        <span>Leer mas</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
-
-                        </div>
-                    </div>
+            <div class="banner intro-slide intro-slide-2 bg-section atleta_background-image-show">
+                <div class="mobile-hide" style="position: fixed; top: 1;z-index: -1;">
+                    <video id="video" playsInline autoplay muted loop  style="width:100%; height:100%">
+                    <source src="assets/images/demos/demo-4/slide/Altorendimiento.webm" type="video/webm" />
+                    <source src="assets/images/demos/demo-4/slide/tunel_carpiano.mp4" type="video/mp4" />
+                    </video>
                 </div>
-                <div class="foreground-img">
-                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
-                </div>
-            </div>
-            <div class="banner intro-slide intro-slide-2 bg-section ">
-            <div style="position: fixed; top: 1;z-index: -1;">
-                <video id="video" autoplay muted loop  style="width:100%; height:100%">
-                <source src="assets/images/demos/demo-4/slide/Altorendimiento.webm" type="video/mp4" />
-                </video>
-            </div>
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
@@ -362,10 +339,13 @@ loading overlay - end
                                     corregir tu postura y acelera tu recuperación.
                                 </p>
                                 <div class="banner-actions">
-                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                        <span>Agendar Una Cita</span>
+                                    <a onclick="showApointer()" class="show_appointment_button_form btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
                                     </a>
-                                    <a href="how-it-works.html" class="btn">
+                                    <a href="appointment.html" class="show_appointment_button_link btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <a href="blogs/lesiones_deportistas.html" class="btn">
                                         <span>Leer mas</span>
                                     </a>
                                 </div>
@@ -377,7 +357,48 @@ loading overlay - end
                     </div>
                 </div>
                 <div class="foreground-img">
-                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
+                    <img src="assets/images/demos/demo-4/slide/deportista 2.png" alt="Banner-slide">
+                </div>
+            </div>
+            <div class="banner intro-slide intro-slide-2 bg-section pasos_background-image-show">
+                <div class="mobile-hide" style="position: fixed; top: 1;z-index: -1;">
+                    <video id="video" playsInline autoplay muted loop  style="width:100%; height:100%">
+                    <source src="assets/images/demos/demo-4/slide/Pasos.webm" type="video/webm" />
+                    <source src="assets/images/demos/demo-4/slide/tunel_carpiano.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                            <div class="banner-content">
+                            <br><br><br><br>
+                                <h2 class="banner-title pasos_font ">
+                                    Contigo en cada paso...
+                                </h2>
+                                <p class="banner-info pasos_font ">
+                                    Te ayudamos a caminar sin dolor, nuestra misión es contribuir a que más personas
+                                    caminen sin dolor…
+                                </p>
+                                <div class="banner-actions">
+                                    <a onclick="showApointer()" class="show_appointment_button_form btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <a href="appointment.html" class="show_appointment_button_link btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
+                                    </a>
+                                    <a href="blogs/dolor_pies.html" class="btn">
+                                        <span>Leer mas</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 d-lg-inline-flex justify-content-lg-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="foreground-img">
+                    <img src="assets/images/demos/demo-4/slide/Dude.png" alt="Banner-slide">
                 </div>
             </div>
             <!--<div class="banner intro-slide intro-slide-2 bg-section "
@@ -428,11 +449,11 @@ loading overlay - end
 
                                 </p>
                                 <div class="banner-actions">
-                                    <a href="appointment-step1.html" class="btn btn-secondary-color">
-                                        <span>Agendar Una Cita</span>
+                                    <a onclick="showApointer()" class="show_appointment_button_form btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
                                     </a>
-                                    <a href="how-it-works.html" class="btn">
-                                        <span>Leer mas</span>
+                                    <a href="appointment.html" class="show_appointment_button_link btn btn-secondary-color">
+                                        <span style="color:white">Agendar Una Cita</span>
                                     </a>
                                 </div>
                             </div>
@@ -443,7 +464,7 @@ loading overlay - end
                     </div>
                 </div>
                 <div class="foreground-img">
-                    <img src="assets/images/demos/demo-4/slide/slide-2-fore.png" alt="Banner-slide">
+                    <img src="assets/images/demos/demo-4/slide/Tapaboca.png" alt="Banner-slide">
                 </div>
             </div>
         </div>
@@ -659,15 +680,15 @@ loading overlay - end
                                 <div class="card card-review review-carousel align-items-start">
                                     <div class="card-heading align-items-start">
                                         <figure>
-                                            <img src="assets/images/avatar/avatar-6.png" class="avatar customer-avatar"
+                                            <img src="assets/images/avatar/Avatar-abuela.png" class="avatar customer-avatar"
                                                  alt="Avatar" width="102" height="102">
                                             <div class="card-review-quote">
                                                 <span>“</span>
                                             </div>
                                         </figure>
                                         <div class="review-info">
-                                            <h4 class="review-author">Jessica Blake</h4>
-                                            <span class="review-city">New York, NY</span>
+                                            <h4 class="review-author">Cosette Casas</h4>
+                                            <span class="review-city">Querétaro MX</span>
                                             <div class="ratings-container">
                                                 <div class="ratings">
                                                     <div class="ratings-val" style="width: 100%;"></div>
@@ -677,24 +698,22 @@ loading overlay - end
                                     </div>
                                     <div class="card-content">
                                         <p class="review-desc ls-20">
-                                            “This is a wonderful service for people who are curently
-                                            without Medical Insurance. The doctor was very friendly and
-                                            listened to my condition thoroughly with explaination to the
-                                            treatment and appropriate prescription.”
+                                        “Tengo muchos años de atenderme con el doctor, llegué en muy mal estado,
+                                        y en una semana era otra, excelente doctor, actualizado, con mucha experiencia, siempre he recibido un servicio de 10!”
                                         </p>
                                     </div>
                                 </div>
                                 <div class="card card-review review-carousel align-items-start">
                                     <div class="card-heading align-items-start">
                                         <figure>
-                                            <img src="assets/images/avatar/avatar-7.png" class="avatar customer-avatar"
+                                            <img src="assets/images/avatar/Avatar Julian.png" class="avatar customer-avatar"
                                                  alt="Avatar" width="102" height="102">
                                             <img src="assets/images/demos/demo-1/icons/icon-quote.png"
                                                  class="quote-icon" alt="Icon-quote" width="55" height="55">
                                         </figure>
                                         <div class="review-info">
-                                            <h4 class="review-author">Jessica Blake</h4>
-                                            <span class="review-city">New York, NY</span>
+                                            <h4 class="review-author">Julián Galeana</h4>
+                                            <span class="review-city">Querétaro MX</span>
                                             <div class="ratings-container">
                                                 <div class="ratings">
                                                     <div class="ratings-val" style="width: 100%;"></div>
@@ -704,23 +723,45 @@ loading overlay - end
                                     </div>
                                     <div class="card-content">
                                         <p class="review-desc ls-20">
-                                            “This is a wonderful service for people who are curently
-                                            without Medical Insurance. The doctor was very friendly and
-                                            listened to my condition thoroughly with explaination to the
-                                            treatment and appropriate prescription.”
+                                        “Increible nivel de servicio y profesionalismo, se ajustaron a mis horarios... las instalaciones y equipos son excelentes. y el personal muy capacitado.
+                                        muy recomendado.”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card-review review-carousel align-items-start">
+                                    <div class="card-heading align-items-start">
+                                        <figure>
+                                            <img src="assets/images/avatar/Avatar-danna.png" class="avatar customer-avatar"
+                                                 alt="Avatar" width="102" height="102">
+                                            <img src="assets/images/demos/demo-1/icons/icon-quote.png"
+                                                 class="quote-icon" alt="Icon-quote" width="55" height="55">
+                                        </figure>
+                                        <div class="review-info">
+                                            <h4 class="review-author">Lupita Romero Lavielle</h4>
+                                            <span class="review-city">Querétaro MX</span>
+                                            <div class="ratings-container">
+                                                <div class="ratings">
+                                                    <div class="ratings-val" style="width: 100%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="review-desc ls-20">
+                                        “Me cambió la vida, vivía con dolores constantemente y después de las terapias tuve una importante mejoría.”
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="banner-actions">
+                            <!--<div class="banner-actions">
                                 <a href="reviews.html" class="btn btn-secondary-color btn-md">
                                     <span>Read All Reviews</span>
                                 </a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
-                <div class="card-rating">
+                <div class="card-rating mobile-hide">
                     <div class="ratings-container">
                         <div class="ratings">
                             <div class="ratings-val" style="width: 100%;"></div>
@@ -729,14 +770,11 @@ loading overlay - end
                     <p class="card-info ls-0">
                         Mas de 20 años de experiencia nos respaldan…
                     </p>
-                    <div class="btn-link">
+                    <!--<div class="btn-link">
                         <a href="reviews.html">Read reviews</a><i class="far fa-caret-right"></i>
-                    </div>
+                    </div>-->
                 </div>
 
-            </div>
-            <div class="foreground-img">
-                <img src="assets/images/demos/demo-3/banner/banner-big-fore.png" alt="Banner-slide">
             </div>
         </div>
         <!------------------------------------------------
@@ -921,8 +959,8 @@ loading overlay - end
                                             Nosotros brindamos tratamientos de calidad
                                             Para todos…
                                         </h2>
-                                        <p class="banner-info">vive sin dolor...<br>
-                                            #TuSaludEnEquilibrio
+                                        <p class="banner-info" style="font-size: 30px;">#TuSaludEnEquilibrio<br>
+                                        vive sin dolor...
 
                                         </p>
                                     </div>
@@ -973,7 +1011,7 @@ loading overlay - end
                 </div>
             </div>
             <div class="foreground-img">
-                <img src="assets/images/demos/demo-2/banner/banner-big-fore.png" alt="image">
+                <img src="assets/images/demos/demo-4/slide/deportista 2.png" alt="image">
             </div>
         </div>
         <!------------------------------------------------
@@ -1080,7 +1118,8 @@ loading overlay - end
 				<div class="footer-bottom">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
+							<p>Created by MakerNation© <br>Tel: 442-471-1047 <br> <a href="https://instagram.com/makernationmx?r=nametag" style="color: white;">makernation.mx</a></p>
+                            
 						</div>
 					</div>
 				</div>
@@ -1098,11 +1137,6 @@ loading overlay - end
 <div class="mobile-menu-container mobile-menu-light">
     <div class="mobile-menu-wrapper">
         <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
-
-        <form class="input-group input-light input-search" action="#">
-            <input type="text" class="form-control search-control" placeholder="search" required>
-            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-        </form>
 
         <nav class="mobile-nav mt-5">
             <ul class="mobile-menu">
@@ -1139,7 +1173,7 @@ loading overlay - end
 </div><!-- End .mobile-menu-container -->
 
 
-<form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 16%; right:4%" id="appointment">
+<form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="display: none;position: absolute;top: 25%; right:4%" id="appointment">
     <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
         <button class="close-button" aria-label="Close alert" type="button" data-close>
             <i class="fa fa-times" aria-hidden="true"></i>

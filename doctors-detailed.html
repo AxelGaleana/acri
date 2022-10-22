@@ -119,24 +119,10 @@
                             </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
-                    <div class="header-search">
-                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                        <form action="#" class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                                   required="">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
                     <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
                         <span style="color:white">Agendar Una Cita</span>
                     </a>
-                    <!----
-                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
-                    <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-                        <span>Sign in</span>
-                    </a>-->
-                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                    <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
                 </div>
             </div>
         </header>
@@ -306,7 +292,7 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 mt-3">
                         <div class="card card-review text-center">
                             <figure>
-                                <img src="https://lh3.googleusercontent.com/a/AATXAJwdqeFJBpQDwjGncJjqFodWBUn52jybTdvGh7eE=s40-c-c0x00000000-cc-rp-mo-br100" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
+                                <img src="assets/images/avatar/Avatar Julian.png" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
                                 <img src="assets/images/demos/demo-1/icons/icon-quote.png" class="quote-icon" alt="Icon-quote" width="55" height="55">
                             </figure>
                             <div class="card-content">
@@ -327,7 +313,7 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 mt-3">
                         <div class="card card-review text-center">
                             <figure>
-                                <img src="assets/images/avatar/avatar-10.png" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
+                                <img src="assets/images/avatar/Avatar-abuela.png" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
                                 <img src="assets/images/demos/demo-1/icons/icon-quote.png" class="quote-icon" alt="Icon-quote" width="55" height="55">
                             </figure>
                             <div class="card-content">
@@ -348,7 +334,7 @@
                     <div class="grid-item col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-10 offset-1 mt-3">
                         <div class="card card-review text-center">
                             <figure>
-                                <img src="assets/images/avatar/avatar-9.png" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
+                                <img src="assets/images/avatar/Avatar-danna.png" class="avatar customer-avatar" alt="Avatar" width="102" height="102">
                                 <img src="assets/images/demos/demo-1/icons/icon-quote.png" class="quote-icon" alt="Icon-quote" width="55" height="55">
                             </figure>
                             <div class="card-content">
@@ -440,7 +426,7 @@
 				<div class="footer-bottom">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
+							<p>Created by MakerNation© <br>Tel: 442-471-1047 <br> <a href="https://instagram.com/makernationmx?r=nametag" style="color: white;">makernation.mx</a></p>
 						</div>
 					</div>
 				</div>
@@ -458,11 +444,6 @@
     <div class="mobile-menu-container mobile-menu-light">
         <div class="mobile-menu-wrapper">
             <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
-
-            <form class="input-group input-light input-search" action="#">
-                                <input type="text" class="form-control search-control" placeholder="search" required>
-                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                            </form>
             
             <nav class="mobile-nav mt-5">
                 <ul class="mobile-menu">
@@ -499,7 +480,7 @@
     </div><!-- End .mobile-menu-container -->
     
     
-    <form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 16%;left:74%" id="appointment">
+    <form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 25%;right:4%" id="appointment">
         <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
             <button class="close-button" aria-label="Close alert" type="button" data-close>
                 <i class="fa fa-times" aria-hidden="true"></i>

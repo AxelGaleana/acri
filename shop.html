@@ -117,15 +117,6 @@
                             </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
-                    <div class="header-search">
-                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                        <form action="#" class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                                   required="">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
                     <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
                         <span style="color:white">Agendar Una Cita</span>
                     </a>
@@ -134,7 +125,7 @@
                     <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
                         <span>Sign in</span>
                     </a>-->
-                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                    <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
                 </div>
             </div>
         </header>
@@ -161,7 +152,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
                         <figure class="mr-xl-10 mr-lg-5 mr-md-3">
-                            <img src="assets/images/products/1 Endura Frente.jpg" alt="Banner-aside" width="470" height="447"v>
+                            <img src="assets/images/products/1 Endura Frente.jpg" alt="Banner-aside" width="470" height="447"v style="padding-left: 50px;">
                         </figure>
                         <div class="banner-content mt-0">
                             <h3 class="banner-title">Endura</h3>
@@ -300,7 +291,8 @@
                                 • Es esencial para el funcionamiento óptimo del sistema gastrointestinal y el útero. <br>
                                 • Fortalece y revitaliza el sistema inmunológico. <br>
                                 • Ideal para tratar el colon irritable. <br>
-                                • Mejora el dolor de cabeza y la migraña. • Mejora la vista cansada. <br>
+                                • Mejora el dolor de cabeza y la migraña. <br>
+                                • Mejora la vista cansada. <br>
                                 • Controla los calambres musculares en las piernas. <br>
                                 • Previene la osteoporosis. <br>
                                 • Regula la hipertensión.<br>
@@ -539,31 +531,307 @@
                     </div>
                     <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
                         <figure>
-                            <img src="assets/images/products/2 Cal-Apatite-md-Frente.jpg" alt="Banner-aside" width="470" height="447"v>
+                            <img src="assets/images/products/Precolim.jpg" alt="Banner-aside" width="470" height="447"v>
                         </figure>
                         <div class="banner-content mt-5 order-first">
-                            <h3 class="banner-title mr-n-1">Cal Apatite MD</h3>
-                            <p class="blog-desc" align="justify">Cal Apatite provee Hidroxiapatita Microcristalina concentrada (HAMC), un compuesto cristalino altamente absorbible que brinda todos los nutrientes encontrados en el hueso sano y esta respaldado por mas de 30 años de investigación científica. La HAMC contiene elementos naturales como el calcio , forofo y cantidades traza de otros minerales, factores de crecimiento oseo, colágeno y otras proteínas oseas vitales.
+                            <h3 class="banner-title mr-n-1">PRECOLIM</h3>
+                            <p class="blog-desc" align="justify">
+                                • Proporciona 0.41 oz de cetonas exógenas en forma de sales beta-hidroxibutirato (BHB). <br>
+                                • Inducir rápidamente la cetosis aguda en 15 minutos. <br>
+                                • Aumentar temporalmente los niveles de cetona circulante durante al menos una hora, haciéndolos disponibles para su uso como fuente de energía adicional. <br>
+                                • Opción conveniente para facilitar un estilo de vida ketogénico y apoyar los objetivos del programa ketogénico. <br>
+                                • Sin OMG, sin gluten y vegetariano. 
+                            </p>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20PRECOLIM." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/Folma-MTHF.jpg" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">FOLMA-MTHF</h3>
+                            <p class="blog-desc" align="justify">
+                                • Eleva la función inmunitaria ayudando a prevenir enfermedades. <br>
+                                • Apoya a la reabsorción de minerales formadores de hueso sano. <br>
+                                • Disuelve los coágulos sanguíneos. <br>
+                                • Mayor absorción que el ácido fólico incluso cuando el pH intestinal está alterado. 
                             </p>
                             <div class="image-box doctor-card mt-3">
                                 <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
                                     <p class="box-desc" style="font-style: italic; font-size: 14px;">
-                                        Ingredientes:<br>
-                                        Concentrado de hidroxiapatita microcristalina (HAMC)*, fosfato dicálcico, celulosa microcristalina, citrato de magnesio, aspartato de magnesio, bisglicinato de magnesio, glicolato celulosa de sodio, ácido esteárico, sílica, colecalciferol y cubierta (hidroxipropilmetilcelulosa, triglicéridos de cadena media e hidroxipropilcelulosa). *Aporta otros minerales traza.
-                                        <br>
-                                        •	La HAMC de la mas alta calidad de Nueva Zelanda, obtenida de terneras alimentadas con heno y pastos libres de fertilizantes y pesticidas. <br>
-                                        •	Libre de contaminación por metales pesados. <br>
-                                        •	Su proceso de fabricación en frio conserva la matriz orgánica del hueso, protegiendo los constituyentes óseos y obteniendo un compuesto de pureza certificada con la mas alta concentración de HAMC de extraordinaria calidad, unida en el mercado.<br>
-                                        <br>
-                                        Almacenaje:<br>
-                                        Manténgase en un lugar fresco y seco, bien cerrado para evitar la humedad.
-                                        
+                                        Recomendación: Tomar 1 cápsula al día preferentemente por la mañana o lo que recomiende el profesional de la salud.<br>
+                                        Presentación: 160 cápsulas de 400mg c/u. sin gluten.<br>
                                         
                                     </p>
                                     <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
                                 </div>
                             </div>
-                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Cal%20Apetite%20MD." target="_blank" class="btn btn-secondary-color">
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20FOLMA-MTHF." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/GAB-P.jpg" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">GAB P</h3>
+                            <p class="blog-desc" align="justify">Nueva cápsula vegetal (Vcaps™), elaborada a base de celulosa vegetal, muy estable ante condiciones de humedad y calor extremo. Certificaciones Kosher, Halal, Vegetariano y Vegano.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Inositol, Acido Gamma Aminobutírico, extracto del fruto de jitomate (Solanum lycopersicum), glicina, niacinamida y clorhidrato de tiamina, Contiene Vitaminas B1 y B3.
+                                        Almacenaje: Manténgase en un lugar fresco y seco.                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20GAB%20P." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/Exogenous Ketones.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">EXOGENOUS KETONES</h3>
+                            <p class="blog-desc" align="justify">
+                                • Proporciona 0.41 oz de cetonas exógenas en forma de sales beta-hidroxibutirato (BHB). <br>
+                                • Inducir rápidamente la cetosis aguda en 15 minutos. <br>
+                                • Aumentar temporalmente los niveles de cetona circulante durante al menos una hora, haciéndolos disponibles para su uso como fuente de energía adicional. <br>
+                                • Opción conveniente para facilitar un estilo de vida ketogénico y apoyar los objetivos del programa ketogénico. <br>
+                                • Sin OMG, sin gluten y vegetariano.
+                            </p>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20EXOGENOUS%20KETONES." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/10-Jointpain.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">Joint + Pain Pet Support  ENDOBALANZ ™</h3>
+                            <p class="blog-desc" align="justify">ENDOBALANZ ™ Joint + Pain Pet Support es una mezcla de CBD premium de cáñamo y fórmulas adaptogénicas que puede apoyar la movilidad y la salud de las articulaciones, dolores o malestar general. Puede aliviar la incomodidad temporal. Puede ayudar a mantener la flexibilidad.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Extracto de CBD Premium de cáñamo  NUTRA99 ™ 300 mg. Mezcla de hierbas patentada: Extracto de garra del diablo, extracto de raíz de Achyranthes, extracto de raíz de angélica, colágeno 225 mg Otros ingredientes: glicerina vegetal, triglicéridos de cadena media, agua, lecitina de girasol. <br>
+                                        Recomendaciones: Agite bien. Ponga 2 ml en la boca de la mascota o sobre la comida.
+                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20ENDOBALANZ%20Joint%20+%20Pain%20Pet%20Support." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/FreezeRelif.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">Freeze Relief</h3>
+                            <p class="blog-desc" align="justify">ENDOBALANZ ™ Freeze Relief Gel (gel de alivio en frío extremo) brinda los beneficios dinámicos de liberación prolongada del CBD Premium y otros ingredientes clave, incluido el mentol, que ayuda a enfriar la piel para aliviar el dolor en un gel tópico.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: "Mentol USP 3.7%, alcanfor, glicerina, ésteres de jojoba, extracto de Zingiber officinalis, extracto de Salix Alba, goma xantana, agua, extracto de CBD de cáñamo Premium NUTRA99 ™, alcohol SD. <br>
+                                        Recomendación: Los adultos deberán aplicar una capa delgada de producto sobre el área afectada no más de 4 veces al día. Masaje no es necesario.                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Freeze%20Relief." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/11 Less-Stress.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">Less Stress Pet Support</h3>
+                            <p class="blog-desc" align="justify">ENDOBALANZ ™ Less Stress Pet Support es una mezcla de CBD Premium de cañamo y fórmulas adaptógenicas que pueden reducir la ansiedad y el estrés al relajar el sistema nervioso.- Viajes.- Tormentas eléctricas o fuegos artificiales.- Cambios de rutina.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: NUTRA99 ™ Extracto de CBD Premium de cáñamo 150 mg Mezcla de hierbas patentada: Extracto de raíz de valeriana, Extracto de flor de manzanilla, Extracto de flor de la pasión, Extracto de raíz de regaliz 200 mg Otros ingredientes: Glicerina vegetal, Triglicéridos de cadena media, Agua, Lecitina de girasol. <br>
+                                        Recomendación: Agite bien. Ponga 2 ml en la boca de la mascota o sobre la comida.
+                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Less%20Stress%20Pet%20Support." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/12-Daily-Support.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">Daily Support</h3>
+                            <p class="blog-desc" align="justify">
+                                Las Cápsulas ENDOBALANZ ™ de CBD para uso Diario, ofrecen una combinación única de vitaminas diarias esenciales y extractos botánicos adaptogénicos para ayudar a mantener la salud, y el sistema inmunológico con un bienestar óptimo. Cada cápsula contiene una fuerte concentración de 25 mg de aceite de CBD Premium de cáñamo NUTRA99™.<br><br>
+
+                                Qué pueden ofrecer las Cápsulas Diarias de ENDOBALANZ ™:<br>
+                                Vitamina B12 para ayudar a impulsar la producción de energía celular.<br>
+                                La vitamina C y D3 ayudan a mantener una función inmunológica óptima. Todos los beneficios reconocidos que el mejor CBD puede proveer a tu cuerpo y mente.
+                                
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Vitamina C (ácido ascóbico), Vitamina B12 (metilcobalamina), Vitamina D3 (cholacalciferol), Mezcla de hierbas patentada, Raíz de Chuan Xiang (Szechaun Lovage), Bai Zui (Rizoma de Atractylodes), Da Zao (Jujube), Extracto de CBD de cáñamo NUTRA99 ™ (25 mg por cápsula). Otros ingredientes: celulosa (de origen vegetal).<br>
+                                        Recomendaciones: Ingesta para adultos de 1 a 2 cápsulas diariamente.
+                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Daily%20Support." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/13 Sleep-Shoot.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">Sleep Suppport</h3>
+                            <p class="blog-desc" align="justify">
+                                Las Cápsulas ENDOBALANZ ™ CBD  Premium de Apoyo del Sueño  brindan una poderosa mezcla adaptogénica con melatonina y CBD NUTRA99 ™ para relajar su mente y cuerpo. Pueden ayudar a promover una noche de sueño profundo y reparador.<br><br>
+
+                                Qué pueden ofrecer las Cápsulas de apoyo al sueño ENDOBALANZ ™:<br>
+                                Apoyo natural al sueño profundo y reparador sin sensación de cansancio al despertar.<br>
+                                25 mg de CBD por cápsula.
+                                
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes:  Mezcla de hierbas patentada con melatonina, extracto de flor de la pasión, extracto de raíz de regaliz, extracto de fruta de azufaifo, celulosa (de origen vegetal), extracto de CBD de cáñamo NUTRA99 ™ (25 mg por cápsula).<br>
+                                        Recomendaciones: Ingesta para adultos de 1 a 2 cápsulas diariamente.                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Sleep%20Suppport." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/Shooting Relief.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">Soothing Relief Balm</h3>
+                            <p class="blog-desc" align="justify">EEl bálsamo hidratante y analgésico de ENDOBALANZ ™ Soothing Relief Balm ofrece CBD PREMIUM y adaptógenos dinámicos que tienen un efecto normalizador y promueven la homeostasis en el cuerpo (equilibrio de las funciones corporales). Logre un alivio calmante con esta mezcla profundamente hidratante de aceites vegetales naturales, adaptógenos que equilibran el cuerpo y el mejor CBD Premium disponible en el mercado. Este lujoso bálsamo corporal nutre la piel seca, vigoriza los músculos cansados y puede aliviar las molestias temporales además de que deja una esencia fresca y relajante en el cuerpo sin ser grasosa.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Aceite de semilla de helianthus annus (girasol), aceite de prunis dulce (almendra), cera alba (cera de abejas), ésteres de poligliceril-3 de candelilla / jojoba / salvado de arroz, estearato de glicerilo, aceite de semilla de cáñamo, aceite de coco orgánico, alcohol cetearílico, estearoil lactilato de sodio, Extracto de raíz de Polygonum Multiflorum, Extracto de raíz de Achyranthes Bidentata, Extracto de CBD Premium de cáñamo NUTRA99 ™.<br>
+                                        Recomendaciones: Aplíquese tópicamente en las áreas necesarias como se necesite.
+                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Soothing%20Relief%20Balm." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/Ampd up.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">AMP'D-UP CBD ENERGY SHOTS 12-PACK</h3>
+                            <p class="blog-desc" align="justify">Cargada con las vitaminas que se encuentran en las frutas y verduras y con la dosis de 2 tazas de café premium, esta práctica y sabrosa dosis de energía fitocannabinoide también ofrece el poder de la ciencia avanzada en forma de nanotecnología. Heneplex ™ es un complejo de CBD de cáñamo de espectro completo formulado para una absorción ideal. Esta sólida mezcla combina fitocannabinoides no psicotrópicos y más de 75 terpenos botánicos para rejuvenecer y revitalizar su vida. <br><br>
+                                Los posibles beneficios de Amp’d UP ™ incluyen:<br>
+                                Energía rápida y saludable. <br>
+                                Enfoque mejorado. <br>
+                                Mayor resistencia. <br>
+                                El alivio del estrés. <br>
+                                Equilibrio sistémico. <br>
+                                Si está buscando un suplemento nutricional sin THC, que sea Non-GMO (Genética no modificada), seguro, sostenible y libre de químicos en una botella, Amp’d UP ™ Energy Shot es el complemento perfecto para su estilo de vida activo.
+                                
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Carbohidratos totales: 0 g, Azúcar: 0 g, Niacina (como niacinamida) 20 mg, Vitamina B6: 40 mg, Vitamina B12: 500 mcg, Taurina: 1500 mg, Cafeína: 240 mg, Ácido málico: 130 mg, Giucuronoiactona: 120 mg, L-Fenilalanina: 100 mg Otros ingredientes : Agua filtrada, sabores naturales, ácido cítrico, sucralosa, sorbato de potasio (conservante), benzoato de sodio (conservante), Heneplex ™ (agua purificada, aceite de CBD de cáñamo anhidro, terpenos), FD&C Azúl # 1 contiene fenilcetonúricos / fenilalanina.<br>
+                                        Recomendaciones: Beba directamente de la botella o agréguelo a su bebida favorita. Cantidad recomendada por porción: Para energía moderada, tome media (1/2) botella. Para obtener la máxima energía, tome una botella entera. Porciones por día: No exceda de dos botellas diarias, consumidas con varias horas de diferencia. Use o deseche cualquier resto dentro de las 72 horas posteriores a la apertura.                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20AMPD-UP%20CBD%20ENERGY%20SHOTS%2012-PACK." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure class="mr-xl-10 mr-lg-5 mr-md-3">
+                            <img src="assets/images/products/13 Sleep-Shoot.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-0">
+                            <h3 class="banner-title">RAPIDCBD SLEEP SHOTS™ RELAX SHOT- 12PK</h3>
+                            <p class="blog-desc" align="justify">¡Lo mejor de la ciencia y la naturaleza para un sueño reparador de forma natural! RapidCBD Sleep Shots cuidadosamente elaborados con Heneplex, Flor de la Pasión y Raíz de Valeriana, cada "shot" relajante te brinda lo que necesitas para descansar y despertarte listo para afrontar el día. Heneplex es un complejo de cáñamo que contiene fitocannabinoides y terpenos botánicos naturales. Para una noche de descanso, beba una botella por completo.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Agua filtrada, sabores naturales, ácido cítrico, sucralosa, sorbato de potasio (conservante), benzoato de sodio (conservante), Heneplex (agua purificada, aceite de oliva, lecitina de girasol, extracto de cáñamo ISO99 y/o NUTRA99, sorbato de potasio, vitamina E, ácido cítrico, aditivo terpénico) , FD&C Azul # 1. <br>
+                                        Recomendaciones: Para una noche de descanso, beba una botella por completo. Porciones por día: No exceda de dos botellas diarias, consumidas con varias horas de diferencia. Use o deseche cualquier resto dentro de las 72 horas posteriores a la apertura.                                        
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20RAPIDCBD%20SLEEP%20SHOTS%E2%84%A2%20RELAX%20SHOT-%2012PK." target="_blank" class="btn btn-secondary-color">
+                                <span style="color:white">Comprar aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-aside align-items-lg-start d-md-flex img-right col-lg-12 col-md-8 col-sm-8 col-10">
+                        <figure>
+                            <img src="assets/images/products/Cooling Relief.png" alt="Banner-aside" width="470" height="447"v>
+                        </figure>
+                        <div class="banner-content mt-5 order-first">
+                            <h3 class="banner-title mr-n-1">Cooling Releif Cream</h3>
+                            <p class="blog-desc" align="justify">ENDOBALANZ ™ Cooling Releif Cream ofrece los beneficios dinámicos de liberación prolongada del CBD y otros ingredientes clave, incluido el mentol, que ayuda a enfriar la piel para aliviar el dolor. El CBD derivado del cáñamo microencapsulado proporciona un alivio constante con beneficios duraderos. Con una infusión de mentol, hierbas naturales y otros ingredientes clave, esta fórmula para aliviar el dolor contiene vehículos naturales que permiten llegar rápidamente a las zonas con dolor y combina lo mejor de la ciencia y la naturaleza, lo que promueve una curación y recuperación más rápidas.
+                            </p>
+                            <div class="image-box doctor-card mt-3">
+                                <div class="box-content" style="background-color: #ffffff; margin-top: -3rem;">
+                                    <p class="box-desc" style="font-style: italic; font-size: 14px;">
+                                        Ingredientes: Mentol 2%. Ingredientes inactivos: agua (agua), dimiristato de glicerilo PEG-12, triglicérido caprílico / cáprico, copolímero de acrilatos de sodio, tocoferol, lecitina, extracto de CBD de cáñamo Premium NUTRA99 ™, fenoxietanol, clorfenesina, fitato de sodio, lachesis mutoleus, rutagraladonadendronato, Graphites, Arnica Montana, Aesculus Hippocastanum, Lavandula Angustifolia (Lavanda) Aceite esencial, Rosmarinus Officinalis (Romero) Aceite esencial, Alcohol, Etilhexilglicerina.<br>
+                                        Recomendaciones: Aplíquese tópicamente en las áreas necesarias como se necesite. 
+                                    </p>
+                                    <a href="javascript:;" class="btn-toggle"><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=524427200627&text=Hola,%20quiero%20más%20información%20sobre%20Cooling%20Releif%20Cream." target="_blank" class="btn btn-secondary-color">
                                 <span style="color:white">Comprar aquí</span>
                             </a>
                         </div>
@@ -599,7 +867,7 @@
 				<div class="footer-bottom">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
+							<p>Created by MakerNation© <br>Tel: 442-471-1047 <br> <a href="https://instagram.com/makernationmx?r=nametag" style="color: white;">makernation.mx</a></p>
 						</div>
 					</div>
 				</div>
@@ -617,11 +885,6 @@
     <div class="mobile-menu-container mobile-menu-light">
         <div class="mobile-menu-wrapper">
             <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
-
-            <form class="input-group input-light input-search" action="#">
-                                <input type="text" class="form-control search-control" placeholder="search" required>
-                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                            </form>
             
             <nav class="mobile-nav mt-5">
                 <ul class="mobile-menu">
@@ -657,6 +920,142 @@
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
     
+    <form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 25%;right:4%" id="appointment">
+        <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
+            <button class="close-button" aria-label="Close alert" type="button" data-close>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <h4 class="sub-title ls-n-5 text-center">Agenda Una Cita</h4>
+        <div class="input-group input-light">
+            <h6 class="input-title">Nombre</h6>
+            <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Teléfono</h6>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="442-222-3333" required>
+            <input type="hidden" id="page" name="page" value="../doctors-detailed.html">
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Email</h6>
+            <input id="email" name="email" type="tel" class="form-control" placeholder="contacto@acrimexico.com" required>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Department</h6>
+            <div class="form-control select-control">Please select<i class="far fa-angle-down"></i></div>
+            <ul class="option-menu" id="option_menu_1">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Most Recent</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Popular</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Oldest</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>All times</span></li>
+            </ul>
+        </div>-->
+        <div class="input-group input-light input-calendar-light">
+            <h6 class="input-title">Fecha</h6>
+            <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020" id="date" name="date">
+            <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Comentarios</h6>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Time</h6>
+            <div id="select_4" class="form-control select-control opacity-1">
+                <div class="check-circle"><i class="fas fa-check"></i></div>
+                <div class="primary-color">4:00<sup>PM</sup></div>
+                Available
+                <i class="far fa-angle-down"></i>
+            </div>
+            <ul class="option-menu" id="option_menu_4">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>5.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>6.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>7.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>8.00<sup>PM</sup></span></li>
+            </ul>
+        </div>-->
+        <button type="submit" class="btn btn-secondary-color btn-form">
+            <span>Agenda Una Cita</span>
+        </button>
+        <h6 class="input-title" id="resultMailSucess" style="display: none;color:green;font-style: italic">¡Gracias! Su petición fue enviada.</h6>
+        <h6 class="input-title" id="resultMailFail" style="display: none;color:red;font-style: italic">Hubo un problema al enviar petición.</h6>
+    </form>
+    
+    <!-- Plugins JS File -->
+    <script>
+        var mailSent = findGetParameter("mailSend");
+        console.log(mailSent);
+        if(mailSent=="success") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailSucess').style.display = 'block';
+        }
+        else if(mailSent=="failure") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailFail').style.display = 'block';
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+    
+        function showApointer() {
+            topFunction();
+            if (document.getElementById('appointment').style.display == 'none') {
+                document.getElementById('appointment').style.display = 'block';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            } else {
+                document.getElementById('appointment').style.display = 'none';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            }
+    
+        }
+    
+        function hideApointer() {
+            document.getElementById('appointment').style.display = 'none';
+    
+    
+        }
+    
+        //Get the button
+        var book = document.getElementById("book");
+        //var whatsapp = document.getElementById("whatsapp");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                book.style.opacity = "1";
+                //whatsapp.style.opacity = "1";
+            } else {
+                book.style.opacity = "0";
+                //whatsapp.style.opacity = "0";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>

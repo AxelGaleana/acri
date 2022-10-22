@@ -115,15 +115,6 @@
                             </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
-                    <div class="header-search">
-                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                        <form action="#" class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                                   required="">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
                     <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
                         <span style="color:white">Agendar Una Cita</span>
                     </a>
@@ -132,7 +123,7 @@
                     <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
                         <span>Sign in</span>
                     </a>-->
-                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                    <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
                 </div>
             </div>
         </header>
@@ -623,7 +614,7 @@
 				<div class="footer-bottom">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
+							<p>Created by MakerNation© <br>Tel: 442-471-1047 <br> <a href="https://instagram.com/makernationmx?r=nametag" style="color: white;">makernation.mx</a></p>
 						</div>
 					</div>
 				</div>
@@ -641,11 +632,6 @@
     <div class="mobile-menu-container mobile-menu-light">
         <div class="mobile-menu-wrapper">
             <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
-
-            <form class="input-group input-light input-search" action="#">
-                                <input type="text" class="form-control search-control" placeholder="search" required>
-                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                            </form>
             
             <nav class="mobile-nav mt-5">
                 <ul class="mobile-menu">
@@ -662,7 +648,7 @@
                         <a href="treatments.html" class="sf-with-ul">Tratamientos</a>
                     </li>
                     <li>
-                        <a href="https://acrimexico.mercadoshops.com.mx/" class="sf-with-ul">Tienda</a>
+                        <a href="../shop.html" class="sf-with-ul">Tienda</a>
                     </li>
                 </ul>
             </nav><!-- End .mobile-nav -->
@@ -681,6 +667,142 @@
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
     
+    <form method="post" action="php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 25%;right:4%" id="appointment">
+        <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
+            <button class="close-button" aria-label="Close alert" type="button" data-close>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <h4 class="sub-title ls-n-5 text-center">Agenda Una Cita</h4>
+        <div class="input-group input-light">
+            <h6 class="input-title">Nombre</h6>
+            <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Teléfono</h6>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="442-222-3333" required>
+            <input type="hidden" id="page" name="page" value="../doctors-detailed.html">
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Email</h6>
+            <input id="email" name="email" type="tel" class="form-control" placeholder="contacto@acrimexico.com" required>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Department</h6>
+            <div class="form-control select-control">Please select<i class="far fa-angle-down"></i></div>
+            <ul class="option-menu" id="option_menu_1">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Most Recent</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Popular</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>Oldest</span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>All times</span></li>
+            </ul>
+        </div>-->
+        <div class="input-group input-light input-calendar-light">
+            <h6 class="input-title">Fecha</h6>
+            <input type="text" id="form-calendar-light" class="form-control" placeholder="12/21/2020" id="date" name="date">
+            <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="input-group input-light">
+            <h6 class="input-title">Comentarios</h6>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <!--<div class="input-group input-light">
+            <h6 class="input-title">Time</h6>
+            <div id="select_4" class="form-control select-control opacity-1">
+                <div class="check-circle"><i class="fas fa-check"></i></div>
+                <div class="primary-color">4:00<sup>PM</sup></div>
+                Available
+                <i class="far fa-angle-down"></i>
+            </div>
+            <ul class="option-menu" id="option_menu_4">
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>5.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>6.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>7.00<sup>PM</sup></span></li>
+                <li class="option-list"><span class="option"><i class="far fa-caret-right"></i>8.00<sup>PM</sup></span></li>
+            </ul>
+        </div>-->
+        <button type="submit" class="btn btn-secondary-color btn-form">
+            <span>Agenda Una Cita</span>
+        </button>
+        <h6 class="input-title" id="resultMailSucess" style="display: none;color:green;font-style: italic">¡Gracias! Su petición fue enviada.</h6>
+        <h6 class="input-title" id="resultMailFail" style="display: none;color:red;font-style: italic">Hubo un problema al enviar petición.</h6>
+    </form>
+    
+    <!-- Plugins JS File -->
+    <script>
+        var mailSent = findGetParameter("mailSend");
+        console.log(mailSent);
+        if(mailSent=="success") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailSucess').style.display = 'block';
+        }
+        else if(mailSent=="failure") {
+            document.getElementById('appointment').style.display = 'block';
+            document.getElementById('resultMailFail').style.display = 'block';
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+    
+        function showApointer() {
+            topFunction();
+            if (document.getElementById('appointment').style.display == 'none') {
+                document.getElementById('appointment').style.display = 'block';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            } else {
+                document.getElementById('appointment').style.display = 'none';
+                document.getElementById('resultMailSucess').style.display = 'none';
+                document.getElementById('resultMailFail').style.display = 'none';
+            }
+    
+        }
+    
+        function hideApointer() {
+            document.getElementById('appointment').style.display = 'none';
+    
+    
+        }
+    
+        //Get the button
+        var book = document.getElementById("book");
+        //var whatsapp = document.getElementById("whatsapp");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                book.style.opacity = "1";
+                //whatsapp.style.opacity = "1";
+            } else {
+                book.style.opacity = "0";
+                //whatsapp.style.opacity = "0";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>

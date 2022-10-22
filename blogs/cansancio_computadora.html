@@ -116,24 +116,10 @@
                             </li>
                         </ul><!-- End .menu -->
                     </nav><!-- End .main-nav -->
-                    <div class="header-search">
-                        <a href="#" class="search-toggle" role="button"><i class="fas fa-search"></i></a>
-                        <form action="#" class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..."
-                                   required="">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
                     <a onclick="showApointer()" class="btn btn-sm btn-primary-color ls-0">
                         <span style="color:white">Agendar Una Cita</span>
                     </a>
-                    <!----
-                    <a href="appointment-step1.html" class="icon-alt"><i class="fal fa-notes-medical"></i></a>-->
-                    <!--<a href="login.html" class="btn btn-sm btn-secondary-color ls-0 btn-login">
-                        <span>Sign in</span>
-                    </a>-->
-                    <a href="login.html" class="icon-alt"><i class="fas fa-user"></i></a>
+                    <a onclick="showApointer()" style="color:#dc3545" class="icon-alt"><i class="far fa-calendar-alt" title="Agendar Una Cita"></i></a>
                 </div>
             </div>
         </header>
@@ -366,7 +352,7 @@
 				<div class="footer-bottom">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12 col-sm-7 col-10">
-							<p>© GFXPARTNER</p>
+							<p>Created by MakerNation© <br>Tel: 442-471-1047 <br> <a href="https://instagram.com/makernationmx?r=nametag" style="color: white;">makernation.mx</a></p>
 						</div>
 					</div>
 				</div>
@@ -384,11 +370,6 @@
     <div class="mobile-menu-container mobile-menu-light">
         <div class="mobile-menu-wrapper">
             <span class="mobile-menu-close"><i class="fal fa-times"></i></span>
-
-            <form class="input-group input-light input-search" action="#">
-                                <input type="text" class="form-control search-control" placeholder="search" required>
-                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                            </form>
             
             <nav class="mobile-nav mt-5">
                 <ul class="mobile-menu">
@@ -425,7 +406,7 @@
     </div><!-- End .mobile-menu-container -->
     
     
-    <form method="post" action="../php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 16%;left:74%" id="appointment">
+    <form method="post" action="../php/contact.php" class="book-form book-form-4 w-100" style="background-color:#97DDFA;display: none;position: absolute;top: 25%;right:4%" id="appointment">
         <div class="callout" data-closable style="float: right;" onclick="hideApointer()">
             <button class="close-button" aria-label="Close alert" type="button" data-close>
                 <i class="fa fa-times" aria-hidden="true"></i>
