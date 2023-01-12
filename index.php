@@ -144,8 +144,8 @@ loading overlay - end
                 </div>
                 <div class="header-right">
                     <ul class="top-menu">
-                        <li><a href="#" class="social-link"><i class="fab fa-twitter"></i>Twitter</a></li>
-                        <li><a href="#" class="social-link"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/acri.mx/" class="social-link"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.facebook.com/acrimx" class="social-link"><i class="fab fa-facebook"></i>Facebook</a></li>
                         <li><a href="#" class="social-link"><i class="fab fa-youtube"></i>Youtube</a></li>
                     </ul>
                 </div>
@@ -798,10 +798,10 @@ loading overlay - end
                                         "Magdalena Bárcenas R.",
                                         "Diana Espinosa",
                                         "Martha Laura Ramos",
-                                        "Mayra Sánchez",
+                                        /*"Mayra Sánchez",*/
                                         "Saúl Luengas Ramos",
                                         "Susana Rosales",
-                                        "Valeria Pineda"
+                                        /*"Valeria Pineda"*/
                                     );
                 $array_photo_names = array(   
                                         "David_Figueroa_Espinosa.jpg", 
@@ -809,10 +809,10 @@ loading overlay - end
                                         "Magdalena_Barcenas.jpg",
                                         "Diana_Espinosa.jpg",
                                         "Martha_Laura_Ramos.jpg",
-                                        "Mayra_Sanchez.jpg",
+                                        /*"Mayra_Sanchez.jpg",*/
                                         "Saul_Luengas_Ramos.jpg",
                                         "Susana_Rosales.jpg",
-                                        "Valeria_Pineda.jpg"
+                                        /*"Valeria_Pineda.jpg"*/
                                     );
                 $array_title = array(
                                         "Radiólogo y Operador en Piedica", 
@@ -820,10 +820,10 @@ loading overlay - end
                                         "Administrativo Contable",
                                         "LTF Asistente Médico",
                                         "Gerente Administrativo",
-                                        "LTF Terapeuta Física",
+                                        /*"LTF Terapeuta Física",*/
                                         "Marketing",
                                         "LTF Terapeuta Física",
-                                        "LTF Terapeuta Física"
+                                        /*"LTF Terapeuta Física"*/
                                     );
                 $array_desc = array(
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.", 
@@ -831,17 +831,16 @@ loading overlay - end
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                /*"All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",*/
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
-                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
-                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
-                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions."
+                                /*"All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",*/
                 );
-                $employee1 = rand(0, 8);
-                $employee2 = rand(0, 8);
+                $employee1 = rand(0, 6);
+                $employee2 = rand(0, 6);
                 while ($employee2 == $employee1)
                 {
-                    $employee2 = rand(0, 9);
+                    $employee2 = rand(0, 6);
                 }
             ?> 
 
@@ -1108,8 +1107,8 @@ loading overlay - end
 						</div>
 						<div class="col-lg-6 col-sm-7 col-10 d-lg-flex justify-content-lg-end">
 							<div class="social-links">
-								<a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-								<a href="#" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+								<a href="https://www.instagram.com/acri.mx/" class="social-link"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+								<a href="https://www.facebook.com/acrimx" class="social-link"><i class="fab fa-facebook"></i><span>Facebook</span></a>
 								<a href="#" class="social-link"><i class="fab fa-youtube"></i><span>Youtube</span></a>
 							</div>
 						</div>
@@ -1159,8 +1158,8 @@ loading overlay - end
         </nav><!-- End .mobile-nav -->
 
         <div class="social-icons mt-6">
-            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/acri.mx/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/acrimx" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-icon" title="Youtube"><i class="fab fa-youtube"></i></a>
         </div><!-- End .social-icons -->
 
