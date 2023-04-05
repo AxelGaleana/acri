@@ -800,7 +800,7 @@ loading overlay - end
                                         "Martha Laura Ramos",
                                         /*"Mayra Sánchez",*/
                                         "Saúl Luengas Ramos",
-                                        "Susana Rosales",
+                                        /*"Susana Rosales",*/
                                         /*"Valeria Pineda"*/
                                     );
                 $array_photo_names = array(   
@@ -811,7 +811,7 @@ loading overlay - end
                                         "Martha_Laura_Ramos.jpg",
                                         /*"Mayra_Sanchez.jpg",*/
                                         "Saul_Luengas_Ramos.jpg",
-                                        "Susana_Rosales.jpg",
+                                        /*"Susana_Rosales.jpg",*/
                                         /*"Valeria_Pineda.jpg"*/
                                     );
                 $array_title = array(
@@ -822,7 +822,7 @@ loading overlay - end
                                         "Gerente Administrativo",
                                         /*"LTF Terapeuta Física",*/
                                         "Marketing",
-                                        "LTF Terapeuta Física",
+                                        /*"LTF Terapeuta Física",*/
                                         /*"LTF Terapeuta Física"*/
                                     );
                 $array_desc = array(
@@ -833,14 +833,14 @@ loading overlay - end
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
                                 /*"All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",*/
                                 "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
-                                "All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",
+                                /*"All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",*/
                                 /*"All of our doctors are highly <br> skilled and have a minimum of <br> 15 years experience in U.S top <br> healthcare institutions.",*/
                 );
-                $employee1 = rand(0, 6);
-                $employee2 = rand(0, 6);
+                $employee1 = rand(0, 5);
+                $employee2 = rand(0, 5);
                 while ($employee2 == $employee1)
                 {
-                    $employee2 = rand(0, 6);
+                    $employee2 = rand(0, 5);
                 }
             ?> 
 
